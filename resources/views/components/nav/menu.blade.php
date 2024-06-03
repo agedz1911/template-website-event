@@ -1,4 +1,97 @@
 <div class="sticky top-0 z-50">
+  <header class="site-header site-header--absolute bg-slate-50 py-2 px-3" id="sticky-menu">
+    <div class="container-default">
+      <div class="flex items-center justify-between gap-x-8">
+        <!-- Header Logo -->
+        <a href="" class="">
+          <img src="assets/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
+        </a>
+        <!-- Header Logo -->
+
+        <!-- Header Navigation -->
+        <div class="menu-block-wrapper">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block" id="append-menu-header">
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="site-menu-main">
+              <li class="nav-item">
+                <a href="" class="nav-link-item">Home</a>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="" class="nav-link-item drop-trigger">Congress Information <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="sub-menu" id="submenu-1">
+                  <li class="sub-menu--item">
+                    <a href="">Welcome Message</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="">Organizing Committee</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item nav-item-has-children">
+                <a href="" class="nav-link-item drop-trigger">Scientific Program
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="sub-menu" id="submenu-2">
+                  <li class="sub-menu--item">
+                    <a href="">Program at Glance</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="">Scientific Committee</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link-item">Registration
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="" class="nav-link-item drop-trigger">Submission
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="sub-menu" id="submenu-11">
+                  <li class="sub-menu--item">
+                    <a href="">Guideline for Abstract</a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="">Abstract Submission</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Header Navigation -->
+
+        <!-- Header User Event -->
+        <div class="flex items-center gap-6">
+          <p class="text-primary-200">test</p>
+          <a class="btn btn-primary hidden  sm:inline-block py-4">Button</a>
+          <!-- Responsive Offcanvas Menu Button -->
+          <div class="block lg:hidden">
+            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <!-- Header User Event -->
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- <div class="sticky top-0 z-50">
     <div class="navbar absolute px-5 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200">
         <div class="navbar-start">
             <div class="dropdown">
@@ -59,61 +152,121 @@
             <a class="btn">Button</a>
         </div>
     </div>
-    <!-- <nav
-      class=" top-0 z-10 block w-full max-w-full px-4 py-2 text-white absolute border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
-      <div class="flex items-center justify-between text-blue-gray-900">
-        <a href="#"
-          class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
-          Material Tailwind
-        </a>
-        <div class="flex items-center gap-4">
-          <div class="hidden mr-4 lg:block">
-            <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-              <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                <a href="#" class="flex items-center">
-                  Pages
+</div> 
+<li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Submission
+                  <i class="fa-solid fa-angle-down"></i>
                 </a>
-              </li>
-              <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                <a href="#" class="flex items-center">
-                  Account
-                </a>
-              </li>
-              <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                <a href="#" class="flex items-center">
-                  Blocks
-                </a>
-              </li>
-              <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                <a href="#" class="flex items-center">
-                  Docs
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="flex items-center gap-x-1">
-            <button
-              class="hidden px-4 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-              type="button">
-              <span>Log In</span>
-            </button>
-            <button
-              class="hidden select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-              type="button">
-              <span>Sign in</span>
-            </button>
-          </div>
-          <button
-            class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-            type="button">
-            <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </span>
-          </button>
-        </div>
-      </div>
-    </nav> -->
-</div>
+                <ul class="sub-menu" id="submenu-3">
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Guideline for Abstract <i class="fa-solid fa-angle-right"></i></a>
+                    <ul class="sub-menu shape-none" id="submenu-4">
+                      <li class="sub-menu--item">
+                        <a href="blog.html">Abstract Submission</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="blog-details.html">blog details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Team
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-5">
+                      <li class="sub-menu--item">
+                        <a href="teams.html">Teams</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">FAQ
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-6">
+                      <li class="sub-menu--item">
+                        <a href="faq.html">FAQ-1</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="faq-2.html">FAQ-2</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="faq-3.html">FAQ-3</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="faq-4.html">FAQ-4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Portfolio
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-7">
+                      <li class="sub-menu--item">
+                        <a href="portfolio.html">Portfolio Classic</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-2.html">Portfolio Masonry</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-3.html">Portfolio Modern</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-4.html">Portfolio Minimal</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Pricing
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-8">
+                      <li class="sub-menu--item">
+                        <a href="pricing.html">Pricing-1</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="pricing-2.html">Pricing-2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Careers
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-9">
+                      <li class="sub-menu--item">
+                        <a href="careers.html">Career</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="career-details.html">Career Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Utilities
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-10">
+                      <li class="sub-menu--item">
+                        <a href="login.html">Login</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="signup.html">Signup</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="reset-password.html">Reset Password</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="coming-soon.html">Coming Soon</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="error-404.html">Error 404</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>-->
