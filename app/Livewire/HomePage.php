@@ -2,12 +2,25 @@
 
 namespace App\Livewire;
 
+use App\Models\User;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+
+// *global title
+#[Title('HomePage')]
+
+// class HomePage extends Component
+// {
+//     public User $user;
+
+//     public function render()
+//     {
+//         return view('livewire.home-page')->title($this->user->name);
+//     }
+// }
 class HomePage extends Component
 {
-    public $title = 'Congress Event Template';
-
 
     public function render()
     {

@@ -1,11 +1,14 @@
 <div class="sticky top-0 z-50">
   <header class="site-header site-header--absolute bg-slate-50 py-2 px-3" id="sticky-menu">
+
     <div class="container-default">
       <div class="flex items-center justify-between gap-x-8">
         <!-- Header Logo -->
-        <a href="" class="">
-          <img src="assets/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
-        </a>
+        <div class="avatar">
+          <a href="/" class="h-14">
+            <img src="images/logo-wecoc.PNG" alt="WECOC" />
+          </a>
+        </div>
         <!-- Header Logo -->
 
         <!-- Header Navigation -->
@@ -50,7 +53,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="about.html" class="nav-link-item">Registration
+                <a href="" class="nav-link-item">Registration
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link-item">Cardiology in Jeopardy
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
@@ -73,9 +81,11 @@
         <!-- Header Navigation -->
 
         <!-- Header User Event -->
-        <div class="flex items-center gap-6">
-          <p class="text-primary-200">test</p>
-          <a class="btn btn-primary hidden  sm:inline-block py-4">Button</a>
+        <div class="flex items-center gap-1">
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
+          <a class="btn btn-primary md:hidden sm:inline-block py-4">Login</a>
           <!-- Responsive Offcanvas Menu Button -->
           <div class="block lg:hidden">
             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
