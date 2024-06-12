@@ -1,5 +1,5 @@
 <div class="sticky top-0 z-50">
-  <header class="site-header site-header--absolute bg-slate-50 py-2 px-3" id="sticky-menu">
+  <header class="site-header  bg-slate-50 py-2 px-3" id="sticky-menu">
 
     <div class="container-default">
       <div class="flex items-center justify-between gap-x-8">
@@ -24,10 +24,10 @@
             </div>
             <ul class="site-menu-main">
               <li class="nav-item">
-                <a href="" class="nav-link-item">Home</a>
+                <a href="" class="nav-link-item hover:text-primary-500">Home</a>
               </li>
               <li class="nav-item nav-item-has-children">
-                <a href="" class="nav-link-item drop-trigger">Congress Information <i class="fa-solid fa-angle-down"></i>
+                <a href="" class="nav-link-item drop-trigger hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-1">
                   <li class="sub-menu--item">
@@ -40,7 +40,7 @@
               </li>
 
               <li class="nav-item nav-item-has-children">
-                <a href="" class="nav-link-item drop-trigger">Scientific Program
+                <a href="" class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-2">
@@ -53,17 +53,17 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link-item">Registration
+                <a href="" class="nav-link-item hover:text-primary-500">Registration
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link-item">Cardiology in Jeopardy
+                <a href="" class="nav-link-item hover:text-primary-500">Cardiology in Jeopardy
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
               <li class="nav-item nav-item-has-children">
-                <a href="" class="nav-link-item drop-trigger">Submission
+                <a href="" class="nav-link-item drop-trigger hover:text-primary-500">Submission
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-11">

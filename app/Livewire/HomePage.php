@@ -8,7 +8,7 @@ use Livewire\Component;
 
 
 // *global title
-#[Title('HomePage')]
+#[Title('Home - 36th Weekend Course on Cardiology')]
 
 // class HomePage extends Component
 // {

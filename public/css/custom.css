@@ -533,7 +533,7 @@
 }
 
 .site-menu-main .sub-menu--item:hover > a {
-    color: #3147ff;
+    color: #168555;
 }
 
 @media (min-width: 992px) {
@@ -1037,4 +1037,37 @@ li.sub-menu--item.nav-item-has-children .dropdown-icon {
 
 .has-container-custom {
     @apply flex flex-col justify-center text-center lg:justify-normal lg:text-left;
+}
+
+.footer-img {
+    background-image: url(/images/footer_bg.jpeg);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-blog {
+    background-image: url(/images/blog_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-counter {
+    /* background-color: rgba(49, 49, 49, 0.5); */
+    background-image: url(/images/counter_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.counter-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 49, 49, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
