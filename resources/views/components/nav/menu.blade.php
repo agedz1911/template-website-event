@@ -23,24 +23,27 @@
               <div class="mobile-menu-close">&times;</div>
             </div>
             <ul class="site-menu-main">
-              <li class="nav-item">
-                <a href="" class="nav-link-item hover:text-primary-500">Home</a>
+              <li class="nav-item {{ request()->is('/') ? 'text-primary-500' : '' }}">
+                <a href="/" wire:navigate  class="nav-link-item hover:text-primary-500">Home</a>
               </li>
-              <li class="nav-item nav-item-has-children">
-                <a href="" class="nav-link-item drop-trigger hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
+              <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
+                <a href="/congress-information" wire:navigate class="nav-link-item drop-trigger  hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-1">
                   <li class="sub-menu--item">
-                    <a href="">Welcome Message</a>
+                    <a href="/congress-information#welcome-message" wire:navigate>Welcome Message</a>
                   </li>
                   <li class="sub-menu--item">
                     <a href="">Organizing Committee</a>
                   </li>
+                  <li class="sub-menu--item">
+                    <a href="">Faculties</a>
+                  </li>
                 </ul>
               </li>
 
-              <li class="nav-item nav-item-has-children">
-                <a href="" class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
+              <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-primary-500' : '' }}">
+                <a href="/scientific-program" wire:navigate class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-2">
@@ -48,22 +51,22 @@
                     <a href="">Program at Glance</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="">Scientific Committee</a>
+                    <a href="">Scientific Schedule</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="" class="nav-link-item hover:text-primary-500">Registration
+              <li class="nav-item {{ request()->is('registration*') ? 'text-primary-500' : '' }}">
+                <a href="/registration" wire:navigate class="nav-link-item hover:text-primary-500">Registration
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ request()->is('cardiology-in-jeopardy*') ? 'text-primary-500' : '' }}">
                 <a href="" class="nav-link-item hover:text-primary-500">Cardiology in Jeopardy
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-              <li class="nav-item nav-item-has-children">
-                <a href="" class="nav-link-item drop-trigger hover:text-primary-500">Submission
+              <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-primary-500' : '' }}">
+                <a href="/submission" wire:navigate class="nav-link-item drop-trigger hover:text-primary-500">Submission
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-11">

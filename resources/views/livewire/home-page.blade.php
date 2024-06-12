@@ -98,7 +98,7 @@
                         Now</button>
                     <button class="btn btn-outline-primary btn-lg">Read More</button>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 justify-items-center w-full gap-2 md:gap-4 mt-5 md:mt-8">
+                <div class="grid grid-cols-2 md:grid-cols-4  w-full gap-2  mt-5 md:mt-8">
                     <div class="card w-36 bg-primary-700 text-white">
                         <div class="card-body">
                             <h2 class="card-title justify-center">29</h2>
