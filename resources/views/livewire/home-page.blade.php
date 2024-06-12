@@ -75,7 +75,7 @@
     <div class="pt-14 pb-24 lg:px-10 px-4">
         <div class="flex flex-col gap-5 justify-between lg:flex-row">
             <div class="w-full justify-center flex">
-                <img src="images/about_left.png" class="w-fit" />
+                <img src="images/about_left.png" class="w-fit transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105" />
             </div>
             <div class="w-full px-0 lg:pl-10 lg:py-5">
                 <img src="images/logo-wecoc.PNG" class="w-44" />
@@ -99,7 +99,7 @@
                     <button class="btn btn-outline-primary btn-lg">Read More</button>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4  w-full gap-2  mt-5 md:mt-8">
-                    <div class="card w-36 bg-primary-700 text-white">
+                    <div class="card w-36 bg-primary-700 text-white ">
                         <div class="card-body">
                             <h2 class="card-title justify-center">29</h2>
                             <p class="text-center">Days</p>
@@ -134,7 +134,7 @@
         <div
             class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4 text-white justify-items-start lg:justify-items-center">
             <div class="flex items-center gap-5">
-                <div class="avatar">
+                <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                     <div class="w-32 border-b-[10px] border-primary-600 rounded-full bg-slate-100">
                         <div class="flex justify-center h-full items-center">
                             <svg class="text-primary-700 fill-current h-20 w-20" viewBox="0 0 70 80">
@@ -149,10 +149,10 @@
                     <h1 class="text-4xl font-semibold text-slate-50">Invited Speakers</h1>
                 </div>
             </div>
-            <div class="flex items-center gap-5">
-                <div class="avatar">
+            <div class="flex items-center gap-5 ">
+                <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                     <div class="w-32 border-b-[10px] border-primary-600 rounded-full bg-slate-100">
-                        <div class="flex justify-center h-full items-center">
+                        <div class="flex justify-center h-full items-center ">
                             <svg class="text-primary-700 fill-current h-20 w-20" viewBox="0 0 683 683">
                                 <path
                                     d="M545.109 418.239C545.125 418.27 545.141 418.301 545.151 418.327C547.417 423.4 552.224 426.374 557.323 426.374C559.146 426.374 561.005 425.994 562.797 425.197C569.62 422.166 572.568 414.39 569.516 407.494C566.469 400.598 558.729 397.551 551.896 400.556C545.062 403.567 542.083 411.332 545.109 418.239Z" />
@@ -173,7 +173,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-5">
-                <div class="avatar">
+                <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                     <div class="w-32 border-b-[10px] border-primary-600 rounded-full bg-slate-100">
                         <div class="flex justify-center h-full items-center">
                             <i class="fa-solid fa-notes-medical text-primary-700 fill-current text-6xl"></i>
@@ -186,7 +186,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-5">
-                <div class="avatar">
+                <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                     <div class="w-32 border-b-[10px] border-primary-600 rounded-full bg-slate-100">
                         <div class="flex justify-center h-full items-center">
                             <i class="fa-regular fa-paste text-primary-700 fill-current text-6xl"></i>
@@ -214,7 +214,7 @@
             <div class="card-body">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
                     <div class="flex items-center gap-3">
-                        <i class="fa-regular fa-envelope text-4xl text-white"></i>
+                        <i class="fa-regular fa-envelope text-6xl text-white"></i>
                         <h2 class="card-title text-xl md:text-4xl text-white">Subscribe for
                             the Latest Updates</h2>
                     </div>
