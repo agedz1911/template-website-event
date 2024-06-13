@@ -1055,6 +1055,20 @@ li.sub-menu--item.nav-item-has-children .dropdown-icon {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.bg-basic {
+    background-image: url(/images/appointment_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-price {
+    background-image: url(/images/pricing_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .bg-counter {
     /* background-color: rgba(49, 49, 49, 0.5); */
     background-image: url(/images/counter_bg.jpg);
