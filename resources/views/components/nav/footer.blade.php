@@ -12,10 +12,10 @@
             </nav>
             <nav class="flex-col flex gap-5 text-white">
                 <h1 class="font-bold text-slate-300 text-2xl">Usefull Links</h1>
-                <a class="link link-hover">Scientific Program</a>
-                <a class="link link-hover">Faculties</a>
-                <a class="link link-hover">Submission</a>
-                <a class="link link-hover">Registration</a>
+                <a href="/scientific-program" class="link link-hover">Scientific Program</a>
+                <a href="/congress-information" class="link link-hover">Congress information</a>
+                <a href="/submission" class="link link-hover">Submission</a>
+                <a href="/registration" class="link link-hover">Registration</a>
             </nav>
             <nav class="flex-col flex gap-2 text-white">
                 <h1 class="font-semibold text-2xl text-slate-300">Get in touch with us</h1>

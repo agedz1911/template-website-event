@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="emerald" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="scroll-smooth" data-theme="emerald" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8" />
@@ -32,6 +32,8 @@
     {{ $slot }}
 
     <x-nav.footer />
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-square btn-sm btn-primary z-40 fixed right-5 md:right-10 bottom-10 over:-translate-y-1 hover:scale-105"><i class="fa-solid text-white pt-2 fa-arrow-up"></i></a>
+
     <script src="js/custom.js"></script>
     @filamentScripts
     @vite('resources/js/app.js')

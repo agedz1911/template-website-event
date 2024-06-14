@@ -1069,6 +1069,13 @@ li.sub-menu--item.nav-item-has-children .dropdown-icon {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.bg-doctor {
+    background-image: url(/images/doctors_bg_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .bg-counter {
     /* background-color: rgba(49, 49, 49, 0.5); */
     background-image: url(/images/counter_bg.jpg);

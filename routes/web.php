@@ -22,12 +22,16 @@ Route::get('/', HomePage::class);
 Route::prefix('/congress-information')->group(function () {
     Route::get('/', CongressInformation::class);
     Route::get('#welcome-message', CongressInformation::class);
+    Route::get('#organizing-committee', CongressInformation::class);
+    Route::get('#faculties', CongressInformation::class);
 });
 Route::prefix('/scientific-program')->group(function () {
     Route::get('/', ScientificProgram::class);
 });
 Route::prefix('/submission')->group(function () {
     Route::get('/', Submission::class);
+    Route::get('/#guideline-abstract', Submission::class);
+    Route::get('/#submission', Submission::class);
 });
 
 Route::get('/registration', Registration::class);

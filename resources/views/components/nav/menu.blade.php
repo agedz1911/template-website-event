@@ -24,26 +24,26 @@
             </div>
             <ul class="site-menu-main">
               <li class="nav-item {{ request()->is('/') ? 'text-primary-500' : '' }}">
-                <a href="/" wire:navigate  class="nav-link-item hover:text-primary-500">Home</a>
+                <a href="/"  class="nav-link-item hover:text-primary-500">Home</a>
               </li>
               <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
-                <a href="/congress-information" wire:navigate class="nav-link-item drop-trigger  hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger  hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-1">
                   <li class="sub-menu--item">
-                    <a href="/congress-information#welcome-message" wire:navigate>Welcome Message</a>
+                    <a href="/congress-information#welcome-message">Welcome Message</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="">Organizing Committee</a>
+                    <a href="/congress-information#organizing-committee">Organizing Committee</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="">Faculties</a>
+                    <a href="/congress-information#faculties">Faculties</a>
                   </li>
                 </ul>
               </li>
 
               <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-primary-500' : '' }}">
-                <a href="/scientific-program" wire:navigate class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
+                <a href="javascript:void(0)"  class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-2">
@@ -56,25 +56,25 @@
                 </ul>
               </li>
               <li class="nav-item {{ request()->is('registration*') ? 'text-primary-500' : '' }}">
-                <a href="/registration" wire:navigate class="nav-link-item hover:text-primary-500">Registration
+                <a href="/registration"  class="nav-link-item hover:text-primary-500">Registration
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
               <li class="nav-item {{ request()->is('cardiology-in-jeopardy*') ? 'text-primary-500' : '' }}">
-                <a href="" class="nav-link-item hover:text-primary-500">Cardiology in Jeopardy
+                <a href="javascript:void(0)" class="nav-link-item hover:text-primary-500">Cardiology in Jeopardy
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
               <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-primary-500' : '' }}">
-                <a href="/submission" wire:navigate class="nav-link-item drop-trigger hover:text-primary-500">Submission
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger hover:text-primary-500">Submission
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-11">
                   <li class="sub-menu--item">
-                    <a href="">Guideline for Abstract</a>
+                    <a href="/submission#guideline-abstract">Guideline for Abstract</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="">Abstract Submission</a>
+                    <a href="/submission#submission">Abstract Submission</a>
                   </li>
                 </ul>
               </li>
