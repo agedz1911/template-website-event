@@ -2,7 +2,7 @@
     {{-- Start Hero --}}
     <div class="hero h-screen hidden lg:inline-block">
         <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
+            <div id="slide1" class="carousel-item relative w-full ">
                 <img src="images/hero_bg_5.jpg" class="w-full" />
                 <div class="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <div class="hero-content flex-col justify-start lg:flex-row">
@@ -27,7 +27,7 @@
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
+            <div id="slide2" class="carousel-item relative w-full ">
                 <img src="images/hero_bg_6.jpg" class="w-full" />
                 <div class="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <div class="hero-content flex-col justify-start lg:flex-row">
@@ -75,8 +75,8 @@
             <div class="card-body">
                 <div class="grid grid-cols-2 lg:grid-cols-5 ">
                     <div class="avatar">
-                        <div class="w-32 rounded">
-                            <img src="images/logo/logo-idi.png" />
+                        <div class="w-28 rounded ">
+                            <img src="images/logo/logo-idi.png" style="object-fit: contain;"/>
                         </div>
                     </div>
                     <div class="avatar">
@@ -86,12 +86,12 @@
                     </div>
                     <div class="avatar">
                         <div class="w-32 rounded">
-                            <img src="images/logo/logo-kemenkes.jpeg" style="object-fit: contain;" />
+                            <img src="images/logo/logo-kemenkes.png" style="object-fit: contain;" />
                         </div>
                     </div>
                     <div class="avatar">
                         <div class="w-32 rounded">
-                            <img src="images/logo/logo-rsui.png" style="object-fit: contain;"/>
+                            <img src="images/logo/logo-rsui.png" style="object-fit: contain;" />
                         </div>
                     </div>
                     <div class="avatar">
@@ -104,7 +104,7 @@
         </div>
     </div>
     {{-- Start About --}}
-    <div class="pb-24 lg:px-10 px-4 mb-10">
+    <div class="pb-24 lg:px-10 px-4 mb-5">
         <div class="flex flex-col gap-5 justify-between lg:flex-row">
             <div class="w-full justify-center flex">
                 <img src="images/about_left.png" class="w-fit transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" />
@@ -126,9 +126,8 @@
                     </div>
                 </div>
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
-                    <button class="btn btn-lg bg-primary-800 hover:bg-primary-600 border-none text-white ">Register
-                        Now</button>
-                    <button class="btn btn-outline-primary btn-lg">Read More</button>
+                    <button class="btn w-1/3 bg-primary-800 hover:bg-primary-600 border-none text-white ">Register Now</button>
+                    <button class="btn w-1/3 btn-outline-primary ">Read More</button>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4  w-full gap-2  mt-5 md:mt-8" id="countdown">
                     <div class="card w-36 bg-primary-700 text-white ">
@@ -156,6 +155,34 @@
                         </div>
                     </div>
                     <div id="end"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col lg:flex-row py-20  px-0 lg:px-5 justify-between gap-5">
+            <div class="card w-full lg:w-1/2 items-center md:items-start md:card-side bg-base-100 shadow-xl">
+                <figure><svg class="lg:w-96 w-48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"/></svg></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Welcome Message</h2>
+                    <p class="text-justify text-slate-600">Weekend Course in Cardiology (WECOC): Augmenting Intelligence in Cardiology and Vascular Medicine.</p>
+                    <p class="text-justify text-slate-600">The Weekend Course in Cardiology (WECOC), hosted by the Department of Cardiology and Vascular Medicine at the Faculty of Medicine, Universitas Indonesia, has been a cornerstone of scientific excellence since its inception in 1989. This annual event, which continues to thrive, serves as a vital platform for medical professionals to stay abreast of cutting-edge advancements in cardiology.</p>
+                    <div class="card-actions justify-end">
+                        <a href="congress-information#welcome-message" class="btn bg-primary-800 text-slate-100 border-none hover:bg-primary-600">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-full lg:w-1/2 bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Important Dates:</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Opening Ceremony: </li>
+                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Conference: </li>
+                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Workshops: </li>
+                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Exhibition Show Days: </li>
+                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>losing Ceremony:</li>
+                    </ul>
+                    
                 </div>
             </div>
         </div>
@@ -245,8 +272,7 @@
                     <form class="flex flex-col lg:flex-row gap-4 lg:w-1/2 w-full">
 
                         <input type="text" placeholder="Enter Your Email" class="input input-bordered input-lg rounded-lg lg:w-2/3 w-full" />
-                        <button class="btn btn-outline-success text-primary-600 hover:bg-primary-300 border-none hover:text-white btn-lg w-full lg:w-1/3 ">Buy
-                            Now</button>
+                        <button class="btn btn-outline-success text-primary-600  border-none hover:text-slate-100 btn-lg w-full lg:w-1/3 ">Submit</button>
                     </form>
                 </div>
             </div>

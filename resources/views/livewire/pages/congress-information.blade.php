@@ -165,7 +165,7 @@
                         <p class="">Sisca Natalia Siagian, MD </p>
                     </div>
                 </div>
-                
+
                 <div class="flex flex-col md:flex-row md:gap-3 items-start md:items-center">
                     <h1 class="text-base font-semibold">PIC Workshop:</h1>
                     <p class="">Estu Rudiktyo, MD </p>
@@ -189,7 +189,7 @@
             <div class="flex flex-col gap-5 w-full items-start">
                 <h1 class="text-lg font-semibold">Non Scientific Committee</h1>
                 <div class="flex flex-col  items-start ">
-                    <h1 class="text-base font-semibold">Opening Ceremony, Department Anniversay,  Homecoming Day/
+                    <h1 class="text-base font-semibold">Opening Ceremony, Department Anniversay, Homecoming Day/
                         Alumni Gathering Day:</h1>
                     <div>
                         <p class="">Dony Yugo Hermanto, MD</p>
@@ -233,26 +233,12 @@
             <h1 class="text-4xl text-primary-700 font-semibold">Faculties</h1>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="card glass">
-                <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!" /></figure>
+                <figure class="px-5 pt-5"><img src="images/doctor_1.jpeg" alt="" class="rounded-lg"  /></figure>
                 <div class="card-body">
-                    <h2 class="card-title">Life hack</h2>
-                    <p>How to park your car at your garage?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Learn now!</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card glass">
-                <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!" /></figure>
-                <div class="card-body">
-                    <h2 class="card-title">Life hack</h2>
-                    <p>How to park your car at your garage?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Learn now!</button>
-                    </div>
+                    <h2 class="card-title text-primary-800">Faculty Name</h2>
+                    <p>Country name</p>
                 </div>
             </div>
         </div>
