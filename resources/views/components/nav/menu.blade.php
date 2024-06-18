@@ -48,10 +48,10 @@
                 </a>
                 <ul class="sub-menu" id="submenu-2">
                   <li class="sub-menu--item">
-                    <a href="">Program at Glance</a>
+                    <a href="/scientific-program#at-glance">Program at Glance</a>
                   </li>
                   <li class="sub-menu--item">
-                    <a href="">Scientific Schedule</a>
+                    <a href="/scientific-program#schedule">Scientific Schedule</a>
                   </li>
                 </ul>
               </li>

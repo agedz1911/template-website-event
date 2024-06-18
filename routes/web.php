@@ -27,6 +27,8 @@ Route::prefix('/congress-information')->group(function () {
 });
 Route::prefix('/scientific-program')->group(function () {
     Route::get('/', ScientificProgram::class);
+    Route::get('#at-glance', ScientificProgram::class);
+    Route::get('#schedule', ScientificProgram::class);
 });
 Route::prefix('/submission')->group(function () {
     Route::get('/', Submission::class);

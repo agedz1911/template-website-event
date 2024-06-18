@@ -11,13 +11,9 @@
                     adipisicing elit "
                 </p>
                 <div class="mt-5">
-                    <div class="flex items-center gap-2 text-lg text-primary-600">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <h4 class="font-bold">Date and Time</h4>
-                    </div>
-                    <div class="flex items-center gap-2 text-lg text-primary-600">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <h4 class="font-bold">Venue</h4>
+                    <div class="font-semibold mt-5 text-slate-500">
+                        <p>October 25<sup>th</sup> - 26<sup>th</sup>, 2024</p>
+                        <p>JW Marriot Hotel, Jakarta, Indonesia</p>
                     </div>
                 </div>
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">

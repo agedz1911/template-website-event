@@ -1,5 +1,5 @@
 <div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
         @foreach ($faculties as $faculty)
         <div class="card glass">
             <figure class="">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 @endforeach
-                @endif  
+                @endif
             </figure>
             <div class="card-body">
                 <h2 class="card-title text-primary-800">{{$faculty->name}}</h2>

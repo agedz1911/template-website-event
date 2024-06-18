@@ -1,4 +1,4 @@
-<div>
+<div class="bg-slate-50">
     <div class="bg-local pt-20 pb-52 lg:px-20 px-5 bg-blog" id="guideline-abstract">
         <div class="flex-col flex gap-3 mb-10">
             <h4 class="text-2xl text-primary-600 font-semibold">Submission</h4>
@@ -116,7 +116,7 @@
                                 illustration’ section with the same word limit of 300</li>
                         </ul>
                     </li>
-                    
+
                 </ul>
 
             </details>
@@ -234,31 +234,10 @@
         </div>
 
     </div>
-    <div class="hero min-h-screen bg-base-200" id="submission">
-        <div class="hero-content flex-col lg:flex-row">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-            <div>
-                <h1 class="text-5xl font-bold">Submission!</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <a href="#welcome-message" class="btn btn-primary">Get Started</a>
-            </div>
-            <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-            </div>
-            <div class="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
-                <div class="collapse-title text-xl font-medium">
-                    Click to open this one and close others
-                </div>
-                <div class="collapse-content">
-                    <p>hello</p>
-                </div>
-            </div>
+    <div class="pt-28 pb-52 lg:px-20 px-5 min-h-screen bg-slate-200" id="submission">
+        <div class="flex-col flex gap-3 mb-10">
+            <h4 class="text-2xl text-primary-600 font-semibold">Submission</h4>
+            <h1 class="text-4xl text-primary-700 font-semibold">Abstract Submission</h1>
         </div>
     </div>
 </div>

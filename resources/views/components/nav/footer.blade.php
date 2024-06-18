@@ -23,6 +23,8 @@
                 <h1 class="font-semibold text-2xl text-slate-300">Get in touch with us</h1>
                 <div class="grid grid-flow-col gap-2">
                     <a class="btn btn-outline btn-lg  py-4 btn-ghost btn-circle"><i
+                            class="fa-solid fa-envelope text-slate-300 text-xl"></i></a>
+                    <a class="btn btn-outline btn-lg  py-4 btn-ghost btn-circle"><i
                             class="fa-brands fa-instagram text-rose-500 text-xl"></i></a>
                     <a class="btn btn-outline btn-lg  py-4 btn-ghost btn-circle"><i
                             class="fa-brands fa-facebook text-sky-500 text-xl"></i></a>

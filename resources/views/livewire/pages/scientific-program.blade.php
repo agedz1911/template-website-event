@@ -1,12 +1,18 @@
-<div>
-<div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-            <div>
-                <h1 class="text-5xl font-bold">Scientific Program!</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <a href="#welcome-message" class="btn btn-primary">Get Started</a>
-            </div>
+<div class="bg-slate-50">
+    <div class=" pt-20 pb-40 lg:px-20 px-5" id="at-glance">
+        <div class="flex-col flex gap-3 mb-10">
+            <h4 class="text-2xl text-primary-600 font-semibold">Scientific Program</h4>
+            <h1 class="text-4xl text-primary-700 font-semibold">Program at Glance</h1>
+        </div>
+
+        <div class="container mx-auto items-center">
+            <livewire:resources.atglance />
+        </div>
+    </div>
+    <div class="bg-local pt-28 pb-52 lg:px-20 px-5 bg-doctor bg-primary-50" id="schedule">
+        <div class="flex-col flex gap-3 mb-16">
+            <h4 class="text-2xl text-primary-600 font-semibold">Scientific Program</h4>
+            <h1 class="text-4xl text-primary-700 font-semibold">Scientific Schedule</h1>
         </div>
     </div>
 </div>
