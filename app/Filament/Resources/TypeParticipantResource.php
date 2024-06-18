@@ -19,8 +19,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class TypeParticipantResource extends Resource
 {
     protected static ?string $model = TypeParticipant::class;
+    protected static ?string $modelLabel = 'Participant Types';
+    protected static ?string $navigationGroup = 'Settings';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-square-3-stack-3d';
 
     public static function form(Form $form): Form
     {
@@ -35,14 +37,15 @@ class TypeParticipantResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name')->label('type'),
-                TextColumn::make('description')
+                TextColumn::make('id'),
+                TextColumn::make('name')->label('type')->searchable(),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

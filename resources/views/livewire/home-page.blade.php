@@ -1,4 +1,4 @@
-<div>
+<div class="bg-slate-50">
     {{-- Start Hero --}}
     <div class="hero h-screen hidden lg:inline-block">
         <div class="carousel w-full">
@@ -76,7 +76,7 @@
                 <div class="grid grid-cols-2 lg:grid-cols-5 ">
                     <div class="avatar">
                         <div class="w-28 rounded ">
-                            <img src="images/logo/logo-idi.png" style="object-fit: contain;"/>
+                            <img src="images/logo/logo-idi.png" style="object-fit: contain;" />
                         </div>
                     </div>
                     <div class="avatar">
@@ -104,7 +104,7 @@
         </div>
     </div>
     {{-- Start About --}}
-    <div class="pb-24 lg:px-10 px-4 mb-5">
+    <div class="pb-24 px-4 mb-5 container mx-auto items-center">
         <div class="flex flex-col gap-5 justify-between lg:flex-row">
             <div class="w-full justify-center flex">
                 <img src="images/about_left.png" class="w-fit transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" />
@@ -115,40 +115,35 @@
                 <p class="text-slate-400 italic lg:mt-10 mt-4">"Theme: Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit "
                 </p>
-                <div class="mt-5">
-                    <div class="flex items-center gap-2 text-lg text-primary-600">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <h4 class="font-bold">Date and Time</h4>
-                    </div>
-                    <div class="flex items-center gap-2 text-lg text-primary-600">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <h4 class="font-bold">Venue</h4>
-                    </div>
+                <div class="font-semibold mt-5 text-slate-500">
+                    <p>October 25<sup>th</sup> - 26<sup>th</sup>, 2024</p>
+                    <p>JW Marriot Hotel, Jakarta, Indonesia</p>
                 </div>
+
                 <div class="lg:mt-10 mt-5 flex items-center gap-4">
                     <button class="btn w-1/3 bg-primary-800 hover:bg-primary-600 border-none text-white ">Register Now</button>
                     <button class="btn w-1/3 btn-outline-primary ">Read More</button>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4  w-full gap-2  mt-5 md:mt-8" id="countdown">
-                    <div class="card w-36 bg-primary-700 text-white ">
+                    <div class="card w-36 bg-primary-700 text-white shadow-xl">
                         <div class="card-body">
                             <h2 class="card-title justify-center" id="days"></h2>
                             <p class="text-center">Days</p>
                         </div>
                     </div>
-                    <div class="card bg-primary-700 w-36 text-white">
+                    <div class="card bg-primary-700 w-36 text-white shadow-xl">
                         <div class="card-body">
                             <h2 class="card-title justify-center" id="hours"></h2>
                             <p class="text-center">Hours</p>
                         </div>
                     </div>
-                    <div class="card bg-primary-700 w-36 text-white">
+                    <div class="card bg-primary-700 w-36 text-white shadow-xl">
                         <div class="card-body">
                             <h2 class="card-title justify-center" id="mins"></h2>
                             <p class="text-center">Minutes</p>
                         </div>
                     </div>
-                    <div class="card bg-primary-700 w-36 text-white">
+                    <div class="card bg-primary-700 w-36 text-white shadow-xl">
                         <div class="card-body">
                             <h2 class="card-title justify-center" id="secs"></h2>
                             <p class="text-center">Seconds</p>
@@ -158,39 +153,35 @@
                 </div>
             </div>
         </div>
-        
-        <div class="flex flex-col lg:flex-row py-20  px-0 lg:px-5 justify-between gap-5">
-            <div class="card w-full lg:w-1/2 items-center md:items-start md:card-side bg-base-100 shadow-xl">
-                <figure><svg class="lg:w-96 w-48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"/></svg></figure>
-                <div class="card-body">
-                    <h2 class="card-title">Welcome Message</h2>
-                    <p class="text-justify text-slate-600">Weekend Course in Cardiology (WECOC): Augmenting Intelligence in Cardiology and Vascular Medicine.</p>
-                    <p class="text-justify text-slate-600">The Weekend Course in Cardiology (WECOC), hosted by the Department of Cardiology and Vascular Medicine at the Faculty of Medicine, Universitas Indonesia, has been a cornerstone of scientific excellence since its inception in 1989. This annual event, which continues to thrive, serves as a vital platform for medical professionals to stay abreast of cutting-edge advancements in cardiology.</p>
-                    <div class="card-actions justify-end">
-                        <a href="congress-information#welcome-message" class="btn bg-primary-800 text-slate-100 border-none hover:bg-primary-600">Read More</a>
-                    </div>
-                </div>
+    </div>
+    {{-- End About --}}
+    <div class="pb-24 px-4 mb-10 container mx-auto items-center mt-10">
+        <div class="flex flex-col lg:flex-row justify-between gap-20">
+            <div class="lg:w-1/2 w-full">
+                <img class="float-left w-32 m-3" src="images/doctor.png">
+                <h2 class="text-2xl font-semibold text-primary-700 mb-2">Welcome Message</h2>
+                <p class="text-justify text-slate-600 mb-4">Weekend Course in Cardiology (WECOC): Augmenting Intelligence in Cardiology and Vascular Medicine.</p>
+                <p class="text-justify text-slate-600 mb-4">The Weekend Course in Cardiology (WECOC), hosted by the Department of Cardiology and Vascular Medicine at the Faculty of Medicine, Universitas Indonesia, has been a cornerstone of scientific excellence since its inception in 1989. This annual event, which continues to thrive, serves as a vital platform for medical professionals to stay abreast of cutting-edge advancements in cardiology.</p>
+                <p class="text-justify text-slate-600 mb-4">Save the Date!.</p>
+                <p class="text-justify text-slate-600 mb-4">The 36<sup>th</sup> Weekend Course in Cardiology is scheduled for October 25<sup>th</sup> - 26<sup>th</sup> , 2024. Mark your calendars and join us for an enriching experience that promises to elevate cardiovascular care.</p>
+                <a href="congress-information#welcome-message" class="float-end mt-10 btn bg-primary-800 text-slate-100 border-none hover:bg-primary-600">Read More</a>
             </div>
-
-            <div class="card w-full lg:w-1/2 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="card-title">Important Dates:</h2>
-                    <ul>
-                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Opening Ceremony: </li>
-                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Conference: </li>
-                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Workshops: </li>
-                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>Exhibition Show Days: </li>
-                        <li><i class="fa-solid fa-angle-right text-xs mr-3"></i>losing Ceremony:</li>
-                    </ul>
-                    
+            <div class="lg:w-1/2 w-full">
+                <div class="mockup-window border bg-primary-300 bg-opacity-25">
+                    <div class="flex justify-center px-4 py-5 bg-slate-100">
+                        <video class=" rounded-lg" controls autoPlay>
+                            <source src="images/video/wecoc-teaser.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    {{-- End About --}}
     {{-- Start Counter --}}
     <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
         {{-- <div class="counter-overlay"></div> --}}
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4 text-white justify-items-start lg:justify-items-center">
             <div class="flex items-center gap-5">
                 <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
@@ -203,7 +194,10 @@
                     </div>
                 </div>
                 <div class="flex-col">
-                    <h1 class="text-5xl font-bold">100+</h1>
+                    <div class="text-5xl font-bold flex flex-row">
+                        <h1 x-data="animatedCounter(100, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 class="text-5xl font-bold">+</h1>
+                    </div>
                     <h1 class="text-4xl font-semibold text-slate-50">Invited Speakers</h1>
                 </div>
             </div>
@@ -222,7 +216,10 @@
                     </div>
                 </div>
                 <div class="flex-col">
-                    <h1 class="text-5xl font-bold">50+</h1>
+                    <div class="text-5xl font-bold flex flex-row">
+                        <h1 x-data="animatedCounter(50, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 class="text-5xl font-bold">+</h1>
+                    </div>
                     <h1 class="text-4xl font-semibold text-slate-50">Topics</h1>
                 </div>
             </div>
@@ -235,7 +232,10 @@
                     </div>
                 </div>
                 <div class="flex-col">
-                    <h1 class="text-5xl font-bold">10+</h1>
+                    <div class="text-5xl font-bold flex flex-row">
+                        <h1 x-data="animatedCounter(4, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 class="text-5xl font-bold">+</h1>
+                    </div>
                     <h1 class="text-4xl font-semibold text-slate-50">Workshops</h1>
                 </div>
             </div>
@@ -248,7 +248,10 @@
                     </div>
                 </div>
                 <div class="flex-col">
-                    <h1 class="text-5xl font-bold">10+</h1>
+                    <div class="text-5xl font-bold flex flex-row">
+                        <h1 x-data="animatedCounter(40, 200)" x-init="updatecounter" x-text="Math.round(current)"></h1>
+                        <h1 class="text-5xl font-bold">+</h1>
+                    </div>
                     <h1 class="text-4xl font-semibold text-slate-50">Symposiums</h1>
                 </div>
             </div>
@@ -281,3 +284,27 @@
 
     {{-- End Map --}}
 </div>
+
+
+<script>
+    function animatedCounter(targer, time = 200, start = 0) {
+        return {
+            current: 0,
+            target: targer,
+            time: time,
+            start: start,
+            updatecounter: function() {
+                start = this.start;
+                const increment = (this.target - start) / this.time;
+                const handle = setInterval(() => {
+                    if (this.current < this.target)
+                        this.current += increment
+                    else {
+                        clearInterval(handle);
+                        this.current = this.target
+                    }
+                }, 1);
+            }
+        };
+    }
+</script>

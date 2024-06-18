@@ -8,11 +8,17 @@ use App\Models\Faculty;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Actions\ActionGroup;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -20,24 +26,40 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class FacultyResource extends Resource
 {
     protected static ?string $model = Faculty::class;
+    // protected static ?string $modelLabel = 'Type';
+    protected static ?string $navigationGroup = 'Front End Components';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
 
     public static function form(Form $form): Form
     {
+        $countries = countries();
+
         return $form
             ->schema([
-                TextInput::make('name'),
-                TextInput::make('country'),
-                FileUpload::make('image'),
+                TextInput::make('name')->label('Full Name')->required(),
+                Select::make('country')
+                    ->required()
+                    ->searchable()
+                    ->options(collect($countries)->mapWithKeys(function ($country) {
+                        return [$country['name'] => $country['name']];
+                    })->all()),
+                // FileUpload::make('image'),
+                SpatieMediaLibraryFileUpload::make('image')
+                    ->collection('images'),
                 TextInput::make('email'),
-                TextInput::make('instagram'),
-                TextInput::make('linkedin'),
-                TextInput::make('twitter'),
-                Toggle::make('is_active'),
-                Select::make('type_partcipant_id')
+                TextInput::make('instagram')
+                    ->prefix('https://')
+                    ->suffix('.com'),
+                TextInput::make('linkedin')->prefix('https://')
+                    ->suffix('.com'),
+                TextInput::make('twitter')->prefix('https://')
+                    ->suffix('.com'),
+                Toggle::make('is_active')->required(),
+                Select::make('type_participants')
                     ->multiple()
-                    ->relationship(name: 'type_participant', titleAttribute: 'name')
+                    ->required()
+                    ->relationship('type_participants', 'name')
                     ->searchable()
                     ->preload()
             ]);
@@ -47,13 +69,22 @@ class FacultyResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('name')->sortable()->searchable(),
+                TextColumn::make('country'),
+                SpatieMediaLibraryImageColumn::make('image')
+                    ->collection('images'),
+                IconColumn::make('is_active')->boolean()->sortable(),
+                TextColumn::make('type_participants.name')->label('Participated')
             ])
             ->filters([
-                //
+                // Filter::make('type_participant.name')
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                ActionGroup::make([
+                    Tables\Actions\EditAction::make(),
+                    Tables\Actions\DeleteAction::make(),
+
+                ])
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

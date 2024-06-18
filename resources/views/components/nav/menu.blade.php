@@ -60,11 +60,6 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-              <li class="nav-item {{ request()->is('cardiology-in-jeopardy*') ? 'text-primary-500' : '' }}">
-                <a href="javascript:void(0)" class="nav-link-item hover:text-primary-500">Cardiology in Jeopardy
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-              </li>
               <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-primary-500' : '' }}">
                 <a href="javascript:void(0)" class="nav-link-item drop-trigger hover:text-primary-500">Submission
                   <i class="fa-solid fa-angle-down"></i>
@@ -78,6 +73,17 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item {{ request()->is('cardiology-in-jeopardy*') ? 'text-primary-500' : '' }}">
+                <a href="javascript:void(0)" class="nav-link-item hover:text-primary-500">Cardiology in Jeopardy
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li class="nav-item {{ request()->is('homecoming*') ? 'text-primary-500' : '' }}">
+                <a href="javascript:void(0)" class="nav-link-item hover:text-primary-500">Homecoming
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              
             </ul>
           </nav>
         </div>
@@ -88,7 +94,7 @@
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
-          <a class="btn btn-primary md:hidden sm:inline-block py-4">Login</a>
+          <!-- <a class="btn btn-primary md:hidden sm:inline-block py-4">Login</a> -->
           <!-- Responsive Offcanvas Menu Button -->
           <div class="block lg:hidden">
             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">

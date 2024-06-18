@@ -10,6 +10,7 @@ use Livewire\Component;
 // *global title
 #[Title('Home - 36th Weekend Course on Cardiology')]
 
+
 // class HomePage extends Component
 // {
 //     public User $user;
@@ -21,7 +22,7 @@ use Livewire\Component;
 // }
 class HomePage extends Component
 {
-
+    
     public function render()
     {
         return view('livewire.home-page');

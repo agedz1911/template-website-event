@@ -232,16 +232,7 @@
             <h4 class="text-2xl text-primary-600 font-semibold">Congress Information</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Faculties</h1>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="card glass">
-                <figure class="px-5 pt-5"><img src="images/doctor_1.jpeg" alt="" class="rounded-lg"  /></figure>
-                <div class="card-body">
-                    <h2 class="card-title text-primary-800">Faculty Name</h2>
-                    <p>Country name</p>
-                </div>
-            </div>
-        </div>
+        <livewire:resources.faculty />
     </div>
 
 

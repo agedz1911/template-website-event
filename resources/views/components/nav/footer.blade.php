@@ -16,6 +16,8 @@
                 <a href="/congress-information" class="link link-hover">Congress information</a>
                 <a href="/submission" class="link link-hover">Submission</a>
                 <a href="/registration" class="link link-hover">Registration</a>
+                <a href="" class="link link-hover">Cardiology in Jeopardy</a>
+                <a href="" class="link link-hover">Homecoming</a>
             </nav>
             <nav class="flex-col flex gap-2 text-white">
                 <h1 class="font-semibold text-2xl text-slate-300">Get in touch with us</h1>
