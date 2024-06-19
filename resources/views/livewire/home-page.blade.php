@@ -169,7 +169,7 @@
             <div class="lg:w-1/2 w-full">
                 <div class="mockup-window border bg-primary-300 bg-opacity-25">
                     <div class="flex justify-center px-4 py-5 bg-slate-100">
-                        <video class=" rounded-lg" controls autoPlay>
+                        <video class=" rounded-lg" controls muted autoplay loop>
                             <source src="images/video/wecoc-teaser.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
@@ -180,8 +180,6 @@
     </div>
     {{-- Start Counter --}}
     <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
-        {{-- <div class="counter-overlay"></div> --}}
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4 text-white justify-items-start lg:justify-items-center">
             <div class="flex items-center gap-5">
                 <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">

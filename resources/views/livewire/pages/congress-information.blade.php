@@ -96,6 +96,8 @@
             <h1 class="text-4xl text-primary-700 font-semibold">Organizing Committee</h1>
         </div>
 
+        <livewire:resources.committee />
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
             <div class="flex flex-col gap-3">
                 <h1 class="text-lg font-semibold">Advisor</h1>
