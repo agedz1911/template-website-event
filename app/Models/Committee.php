@@ -15,5 +15,6 @@ class Committee extends Model implements HasMedia
         'name',
         'title',
         'category',
+        'no_urut'
     ];
 }

@@ -1,4 +1,4 @@
-<div>
+<div class="bg-slate-50">
     <div class="pt-14 pb-24 lg:px-10 px-4">
         <div class="flex flex-col gap-5 justify-between lg:flex-row">
             <div class="w-full justify-center flex">
@@ -81,10 +81,11 @@
             <p class="text-justify">Feel free to explore the WECOC website for further details and updates. If you have any specific questions, don't hesitate to ask!</p>
             <p class="text-justify">Welcome to the full offline conference of the 36th WECOC 2024.</p>
             <p class="text-justify">Warm regards,</p>
-            <div class="mt-10">
+            <img class="float-left rounded-full ring ring-primary ring-offset-base-100 ring-offset-4 w-40 m-3" src="storage/10/1k7yJRWd2d3MeeNC5CxnNyhDJXmalD-metaQ2hhaXJtYW4gZHIuIFNvbnkgSGlsYWwgV2ljYWtzb25vLCBTcC5KUChLKS5wbmc=-.png">
+            <div class="">
                 <p class="font-semibold underline">Sony Hilal Wicaksono, MD</p>
                 <p class="text-xs font-semibold">Congress Chairperson, <br>
-                    The 36th Weekend Course of Cardiology
+                    The 36<sup>th</sup> Weekend Course of Cardiology
                 </p>
             </div>
         </div>

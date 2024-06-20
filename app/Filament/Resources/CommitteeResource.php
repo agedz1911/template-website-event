@@ -31,6 +31,7 @@ class CommitteeResource extends Resource
                 TextInput::make('name'),
                 TextInput::make('title'),
                 TextInput::make('category'),
+                TextInput::make('no_urut'),
                 SpatieMediaLibraryFileUpload::make('image')
                     ->collection('committee'),
             ]);
@@ -44,6 +45,7 @@ class CommitteeResource extends Resource
                 TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('title'),
                 TextColumn::make('category'),
+                TextColumn::make('no_urut')->sortable(),
                 SpatieMediaLibraryImageColumn::make('image')
                     ->collection('committee'),
             ])

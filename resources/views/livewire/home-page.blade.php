@@ -158,7 +158,7 @@
     <div class="pb-24 px-4 mb-10 container mx-auto items-center mt-10">
         <div class="flex flex-col lg:flex-row justify-between gap-20">
             <div class="lg:w-1/2 w-full">
-                <img class="float-left w-32 m-3" src="images/doctor.png">
+                <img class="float-left rounded-full ring ring-primary ring-offset-base-100 ring-offset-4 w-32 m-3" src="storage/10/1k7yJRWd2d3MeeNC5CxnNyhDJXmalD-metaQ2hhaXJtYW4gZHIuIFNvbnkgSGlsYWwgV2ljYWtzb25vLCBTcC5KUChLKS5wbmc=-.png">
                 <h2 class="text-2xl font-semibold text-primary-700 mb-2">Welcome Message</h2>
                 <p class="text-justify text-slate-600 mb-4">Weekend Course in Cardiology (WECOC): Augmenting Intelligence in Cardiology and Vascular Medicine.</p>
                 <p class="text-justify text-slate-600 mb-4">The Weekend Course in Cardiology (WECOC), hosted by the Department of Cardiology and Vascular Medicine at the Faculty of Medicine, Universitas Indonesia, has been a cornerstone of scientific excellence since its inception in 1989. This annual event, which continues to thrive, serves as a vital platform for medical professionals to stay abreast of cutting-edge advancements in cardiology.</p>
