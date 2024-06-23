@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('scientific_schedules', function (Blueprint $table) {
             $table->id();
-            $table->string('session')->nullable();
-            $table->date('date')->nullable();
-            $table->string('time')->nullable();
-            $table->string('title')->nullable();
-            $table->foreignId('facuty_id')->constrained('faculties')->nullable();
+            $table->unsignedBigInteger('session_id');
+            $table->foreign('session_id')->references('id')->on('schedule_sessions');
+            $table->time('timeStart')->nullable();
+            $table->time('timeEnd')->nullable();
+            $table->string('topic');
+            $table->unsignedBigInteger('faculty_id');
+            $table->foreign('faculty_id')->references('id')->on('faculties');
             $table->boolean('is_published')->nullable();
-            $table->timestamps(); 
+            $table->timestamps();
         });
     }
 

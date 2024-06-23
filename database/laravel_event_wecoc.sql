@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2024 at 02:54 AM
+-- Generation Time: Jun 23, 2024 at 05:39 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -62,14 +62,45 @@ INSERT INTO `committees` (`id`, `name`, `title`, `category`, `image`, `no_urut`,
 (4, 'Dr. dr. Dafsah Arifa Juzar, Sp.JP(K)', 'Advisor', 'Advisor', NULL, 1, '2024-06-19 09:00:40', '2024-06-20 09:13:24'),
 (5, 'dr. Yovi Kurniawati, Sp.JP(K)', 'Coordinator', 'Scientific Committee', NULL, 5, '2024-06-19 09:01:24', '2024-06-20 09:35:25'),
 (6, 'dr. Mira Fauziah, Sp.JP', 'Secretary', 'Scientific Committee', NULL, 5, '2024-06-19 09:01:50', '2024-06-20 09:36:03'),
-(7, 'Prof. Dr. dr. Yoga Yuniadi, Sp.JP(K)', 'Member', 'Scientific Committee', NULL, 5, '2024-06-19 09:02:24', '2024-06-20 09:49:08'),
+(7, 'Prof. Dr. dr. Yoga Yuniadi, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 5, '2024-06-19 09:02:24', '2024-06-21 08:41:10'),
 (8, 'dr. Sony Hilal Wicaksono, Sp.JP(K)', 'Chairman', 'Chairman', NULL, 2, '2024-06-20 08:52:48', '2024-06-20 09:16:42'),
 (9, 'dr. Damba Dwisepto Aulia Sakti, Sp.JP', 'Secretary', 'Secretary', NULL, 3, '2024-06-20 08:53:40', '2024-06-20 09:24:19'),
 (10, 'dr. Elen, Sp.JP(K)', 'Treasurer', 'Treasurer', NULL, 4, '2024-06-20 08:56:40', '2024-06-20 09:25:37'),
 (11, 'dr. Vienna Rossimarina, Sp.JP(K)', 'Treasurer', 'Treasurer', NULL, 4, '2024-06-20 08:57:42', '2024-06-20 09:26:08'),
-(12, 'dr. Amir Aziz Alkatiri, Sp.JP(K)', 'Member', 'Scientific Committee', NULL, 5, '2024-06-20 09:51:13', '2024-06-20 09:51:45'),
-(13, 'dr. BRM. Ario Soeryo Kuncoro, Sp.JP(K)', 'Member', 'Scientific Committee', NULL, 5, '2024-06-20 09:52:47', '2024-06-20 09:52:47'),
-(14, 'dr. Celly Anantaria A, Sp.JP(K), M.Pend.Ked.', 'Member', 'Scientific Committee', NULL, 6, '2024-06-20 09:53:57', '2024-06-20 09:54:53');
+(12, 'dr. Amir Aziz Alkatiri, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 5, '2024-06-20 09:51:13', '2024-06-21 08:42:01'),
+(13, 'dr. BRM. Ario Soeryo Kuncoro, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 5, '2024-06-20 09:52:47', '2024-06-21 08:42:17'),
+(14, 'dr. Celly Anantaria A, Sp.JP(K), M.Pend.Ked.', 'Member', 'Member of Scientific', NULL, 6, '2024-06-20 09:53:57', '2024-06-21 08:42:34'),
+(15, 'dr. Daniel PL. Tobing, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 6, '2024-06-21 07:59:04', '2024-06-21 08:42:57'),
+(16, 'Dr. dr. Basuni Radi, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 6, '2024-06-21 08:00:15', '2024-06-21 08:43:25'),
+(17, 'Dr. dr. Dicky Armein Hanafy, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 6, '2024-06-21 08:02:40', '2024-06-21 08:44:06'),
+(18, 'Dr. dr. Doni Firman, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 6, '2024-06-21 08:08:03', '2024-06-21 08:45:18'),
+(19, 'Dr. dr. Rita Zahara, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 7, '2024-06-21 08:09:48', '2024-06-21 08:50:22'),
+(20, 'dr. Taofan, Sp.JP(K) ', 'Member', 'Member of Scientific', NULL, 7, '2024-06-21 08:11:15', '2024-06-21 08:46:13'),
+(21, 'dr. Oktavia Lilyasari, M.Kes, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 7, '2024-06-21 08:12:55', '2024-06-21 08:47:31'),
+(22, 'dr. Radityo Prakoso, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 7, '2024-06-21 08:13:35', '2024-06-21 08:47:51'),
+(23, 'Dr. dr. Dafsah Arifa Juzar, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 7, '2024-06-21 08:15:01', '2024-06-21 08:49:37'),
+(24, 'dr. Rina Ariani, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 8, '2024-06-21 08:17:35', '2024-06-21 08:49:42'),
+(25, 'dr. Sisca Natalia Siagian, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 8, '2024-06-21 08:18:08', '2024-06-21 08:49:47'),
+(26, 'dr. Siska Suridanda Danny, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 8, '2024-06-21 08:19:53', '2024-06-21 08:51:16'),
+(27, 'dr. Suko Adiarto, Ph.D, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 8, '2024-06-21 08:20:24', '2024-06-21 08:51:25'),
+(28, 'dr. Sunu Budhi Raharjo, Ph.D, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 8, '2024-06-21 08:22:10', '2024-06-21 08:51:31'),
+(29, 'Prof. Dr. dr. Amiliana M. Soesanto, Sp.JP(K)', 'Member', 'Member of Scientific', NULL, 9, '2024-06-21 08:23:08', '2024-06-21 20:05:44'),
+(30, 'Rarsari Soearso, MD ', 'Member', 'Member of Scientific', NULL, 9, '2024-06-21 08:26:43', '2024-06-21 20:06:02'),
+(31, 'dr. Estu Rudiktyo, Sp.JP(K)', 'PIC', 'Workshop', NULL, 10, '2024-06-21 08:30:20', '2024-06-21 20:06:46'),
+(32, 'dr. Bambang Widyantoro, Ph.D, Sp.JP(K)', 'PIC', 'Free Paper and Poster Presentation', NULL, 10, '2024-06-21 08:32:05', '2024-06-21 20:08:54'),
+(33, 'dr. Hary Sakti Muliawan, PhD, Sp.JP', 'PIC', 'Free Paper and Poster Presentation', NULL, 10, '2024-06-21 08:33:59', '2024-06-21 20:08:43'),
+(34, 'dr. Dian Zamroni, Sp.JP(K)', 'PIC', 'Cardiology on Jeopardy', NULL, 10, '2024-06-21 08:35:19', '2024-06-21 20:09:08'),
+(35, 'dr. Dony Yugo Hermanto, Sp.JP(K)', 'Member', 'Opening Ceremony, Department Anniversay, Homecoming Day / Alumni Gathering Day', NULL, 11, '2024-06-21 08:38:21', '2024-06-21 20:09:32'),
+(36, 'dr. Dwita Rian Desandri, Sp.JP(K)', 'Member', 'Opening Ceremony, Department Anniversay, Homecoming Day / Alumni Gathering Day', NULL, 11, '2024-06-21 20:10:42', '2024-06-21 20:18:54'),
+(37, 'dr. Ruth Grace Aurora, Sp.JP', 'Member', 'Opening Ceremony, Department Anniversay, Homecoming Day / Alumni Gathering Day', NULL, 11, '2024-06-21 20:11:15', '2024-06-21 20:19:12'),
+(38, 'dr. Adelin Dhivi Kemalasari, Sp.JP', 'Member', 'Promotion, Publication, Registration', NULL, 12, '2024-06-21 20:25:30', '2024-06-21 20:25:30'),
+(39, 'dr. Olfi Lelya, Sp.JP(K)', 'Member', 'Promotion, Publication, Registration', NULL, 12, '2024-06-21 20:26:04', '2024-06-21 20:26:04'),
+(40, 'dr. Suci Indriani, Sp.JP(K)', 'Member', 'Promotion, Publication, Registration', NULL, 12, '2024-06-21 20:26:42', '2024-06-21 20:26:42'),
+(41, 'dr. Aditya Agita Sembiring, Sp.JP(K)', 'Member', 'Website, Registration, Audiovisual, Documentation', NULL, 13, '2024-06-21 20:30:42', '2024-06-21 20:32:22'),
+(42, 'dr. Bhayu Hanggadhi Nugroho, Sp.JP', 'Member', 'Website, Registration, Audiovisual, Documentation', NULL, 13, '2024-06-21 20:31:31', '2024-06-21 20:31:31'),
+(43, 'dr. Prima Almazini, Sp.JP', 'Member', 'Website, Registration, Audiovisual, Documentation', NULL, 13, '2024-06-21 20:31:58', '2024-06-21 20:31:58'),
+(44, 'dr. Arwin Saleh Mangkuanom, Sp.JP(K)', 'Member', 'Accommodation', NULL, 14, '2024-06-21 20:33:01', '2024-06-21 20:33:01'),
+(45, 'dr. Nanda Iryuza, Sp.JP', 'Member', 'Accommodation', NULL, 14, '2024-06-21 20:33:24', '2024-06-21 20:33:24');
 
 -- --------------------------------------------------------
 
@@ -97,7 +128,9 @@ CREATE TABLE `faculties` (
 
 INSERT INTO `faculties` (`id`, `name`, `country`, `image`, `email`, `instagram`, `linkedin`, `twitter`, `is_active`, `created_at`, `updated_at`) VALUES
 (13, 'Speaker 1', 'Australia', NULL, NULL, NULL, NULL, NULL, 1, '2024-06-18 02:05:32', '2024-06-18 02:05:32'),
-(14, 'Speaker 2', 'Indonesia', NULL, NULL, NULL, NULL, NULL, 1, '2024-06-18 02:10:12', '2024-06-18 02:16:22');
+(14, 'faculty 1', 'Indonesia', NULL, NULL, NULL, NULL, NULL, 1, '2024-06-18 02:10:12', '2024-06-21 23:20:18'),
+(15, 'Speaker 2', 'Indonesia', NULL, NULL, NULL, NULL, NULL, 1, '2024-06-21 23:08:34', '2024-06-21 23:08:34'),
+(16, 'faculty 2', 'United Arab Emirates', NULL, NULL, NULL, NULL, NULL, 1, '2024-06-21 23:08:50', '2024-06-21 23:08:50');
 
 -- --------------------------------------------------------
 
@@ -119,7 +152,10 @@ INSERT INTO `faculty_type_participant` (`id`, `faculty_id`, `type_participant_id
 (1, 13, 5),
 (2, 13, 6),
 (3, 14, 5),
-(4, 14, 6);
+(4, 14, 6),
+(5, 15, 6),
+(6, 15, 5),
+(7, 16, 5);
 
 -- --------------------------------------------------------
 
@@ -183,7 +219,37 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, 
 (17, 'App\\Models\\Committee', 2, '1c835d77-4940-413c-bdb2-2f6de53cd27a', 'committee', 'Advisor _ Scientific _ Free Paper and Poster Presentation dr. Bambang Widyantoro, Ph.D, Sp.JP(K)', 'D6o6sYpgv9DiwLhFPnm6HlcRflyPg5-metaQWR2aXNvciBfIFNjaWVudGlmaWMgXyBGcmVlIFBhcGVyIGFuZCBQb3N0ZXIgUHJlc2VudGF0aW9uIGRyLiBCYW1iYW5nIFdpZHlhbnRvcm8sIFBoLkQsIFNwLkpQKEspLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 25959, '[]', '[]', '[]', '[]', 1, '2024-06-20 09:40:32', '2024-06-20 09:40:32'),
 (18, 'App\\Models\\Committee', 12, 'a484baf6-2bc8-43ff-aa46-9c1e2a5e0137', 'committee', 'Scientific dr. Amir Aziz Alkatiri, Sp.JP(K)', 'tGPU03e1lXcS1oadDRQt9Po8ai4Vce-metaU2NpZW50aWZpYyBkci4gQW1pciBBeml6IEFsa2F0aXJpLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 1787621, '[]', '[]', '[]', '[]', 1, '2024-06-20 09:51:13', '2024-06-20 09:51:13'),
 (19, 'App\\Models\\Committee', 13, '93fb55c9-9bee-4841-a9b8-fa654982b1b1', 'committee', 'Scientific dr. BRM. Ario Soeryo Kuncoro, Sp.JP(K)', 'WnZmBpcYMQLZg7CXN7nBvlVZCyIRTI-metaU2NpZW50aWZpYyBkci4gQlJNLiBBcmlvIFNvZXJ5byBLdW5jb3JvLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 19943, '[]', '[]', '[]', '[]', 1, '2024-06-20 09:52:47', '2024-06-20 09:52:47'),
-(20, 'App\\Models\\Committee', 14, '983b1a92-6205-4e26-8afc-225b0de2d626', 'committee', 'Scientific dr. Celly Anantaria A, Sp.JP(K), M.Pend.Ked', 'CywAlQTLQaHS1ht1j3uoAk7reFAMUF-metaU2NpZW50aWZpYyBkci4gQ2VsbHkgQW5hbnRhcmlhIEEsIFNwLkpQKEspLCBNLlBlbmQuS2VkLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 34159, '[]', '[]', '[]', '[]', 1, '2024-06-20 09:54:38', '2024-06-20 09:54:38');
+(20, 'App\\Models\\Committee', 14, '983b1a92-6205-4e26-8afc-225b0de2d626', 'committee', 'Scientific dr. Celly Anantaria A, Sp.JP(K), M.Pend.Ked', 'CywAlQTLQaHS1ht1j3uoAk7reFAMUF-metaU2NpZW50aWZpYyBkci4gQ2VsbHkgQW5hbnRhcmlhIEEsIFNwLkpQKEspLCBNLlBlbmQuS2VkLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 34159, '[]', '[]', '[]', '[]', 1, '2024-06-20 09:54:38', '2024-06-20 09:54:38'),
+(21, 'App\\Models\\Committee', 15, 'f031c2b9-b2e8-4e81-afa9-52e163416c30', 'committee', 'Scientific dr. Daniel PL. Tobing, Sp.JP(K)', '31PNyLfUr5kN85lqNQ6ieN9wfFsL9P-metaU2NpZW50aWZpYyBkci4gRGFuaWVsIFBMLiBUb2JpbmcsIFNwLkpQKEspLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 16663, '[]', '[]', '[]', '[]', 1, '2024-06-21 07:59:05', '2024-06-21 07:59:05'),
+(22, 'App\\Models\\Committee', 16, '863fa810-999a-4728-8fbb-787a10472b0c', 'committee', 'Scientific Dr. dr. Basuni Radi, Sp.JP(K)', 'T1yaW0ds1gOAGPx4GX4WBpysZUwoLA-metaU2NpZW50aWZpYyBEci4gZHIuIEJhc3VuaSBSYWRpLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 15790, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:00:15', '2024-06-21 08:00:15'),
+(23, 'App\\Models\\Committee', 17, '87951bd9-d93e-4518-a9f3-81f168957e94', 'committee', 'Scientific Dr. dr. Dicky  Armein Hanafy, Sp.JP(K)', 'zuCIEmba0VtxvJQrkMGhxFKLbDe21o-metaU2NpZW50aWZpYyBEci4gZHIuIERpY2t5ICBBcm1laW4gSGFuYWZ5LCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 20584, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:02:40', '2024-06-21 08:02:40'),
+(24, 'App\\Models\\Committee', 18, '75d93b32-6192-4b7c-9a51-f22ed112389f', 'committee', 'Scientific Dr. dr. Doni Firman, Sp.JP(K)', 'pHLQ0wA9IPehLEq9FqLKFcTEwhelgY-metaU2NpZW50aWZpYyBEci4gZHIuIERvbmkgRmlybWFuLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 15492, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:08:03', '2024-06-21 08:08:03'),
+(25, 'App\\Models\\Committee', 19, 'a8de399b-40b0-44df-ad08-0e62459ff89b', 'committee', 'Scientific Dr. dr. Rita Zahara, Sp.JP(K)', '62URpEr9pSbOMBm8yxARbdFRnG7QY6-metaU2NpZW50aWZpYyBEci4gZHIuIFJpdGEgWmFoYXJhLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 17450, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:09:49', '2024-06-21 08:09:49'),
+(26, 'App\\Models\\Committee', 20, '251a49b4-d45f-4813-ac0c-8289deb8f93b', 'committee', 'Advisor dan Scientific dr. Taofan,  Sp.JP(K)', 'Y22gedsOMSwD5CQEwNqp7g8Nmbp02N-metaQWR2aXNvciBkYW4gU2NpZW50aWZpYyBkci4gVGFvZmFuLCAgU3AuSlAoSykuanBlZw==-.jpg', 'image/jpeg', 'public', 'public', 26308, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:11:15', '2024-06-21 08:11:15'),
+(27, 'App\\Models\\Committee', 21, 'd6148e8d-cbc6-4000-97f1-5a84646a67c1', 'committee', 'Scientific dr. Oktavia Lilyasari, M.Kes, Sp.JP(K)', '5cGMtp9GKEQb5M0Vl69FoXb2YK3Yel-metaU2NpZW50aWZpYyBkci4gT2t0YXZpYSBMaWx5YXNhcmksIE0uS2VzLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 18632, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:12:55', '2024-06-21 08:12:55'),
+(28, 'App\\Models\\Committee', 22, 'aa4d0fab-277f-4e0e-8c50-030c0c302d82', 'committee', 'Scientific dr. Radityo Prakoso, Sp.JP(K)', 'sZAM3NsK9RVpYLmwgS2ho4cBvTj3RF-metaU2NpZW50aWZpYyBkci4gUmFkaXR5byBQcmFrb3NvLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 14545, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:13:35', '2024-06-21 08:13:35'),
+(29, 'App\\Models\\Committee', 23, '57ded157-2cf3-454b-af2d-30c921b9375e', 'committee', 'Advisor dan Scientific Dr. dr. Dafsah Arifa Juzar, Sp.JP(K)', 'EfQFFAskpntkddEfw5sIFvLLt8RtfI-metaQWR2aXNvciBkYW4gU2NpZW50aWZpYyBEci4gZHIuIERhZnNhaCBBcmlmYSBKdXphciwgU3AuSlAoSykuanBlZw==-.jpg', 'image/jpeg', 'public', 'public', 18621, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:15:01', '2024-06-21 08:15:01'),
+(30, 'App\\Models\\Committee', 24, '7da3f428-8634-40c5-b864-003aaeb1ba34', 'committee', 'Scientific dr. Rina Ariani, Sp.JP(K)', '3Vj29LGZLOWPkqlr6e8xHdNAssR1Tz-metaU2NpZW50aWZpYyBkci4gUmluYSBBcmlhbmksIFNwLkpQKEspLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 27748, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:17:35', '2024-06-21 08:17:35'),
+(31, 'App\\Models\\Committee', 25, 'f5d7348f-f55a-492a-ad90-fd5be84f9fc8', 'committee', 'Scientific dr. Sisca Natalia Siagian, Sp.JP(K)', 'Qv6trXlFuL4T5wa9lDCSffiSBpf73U-metaU2NpZW50aWZpYyBkci4gU2lzY2EgTmF0YWxpYSBTaWFnaWFuLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 31059, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:18:08', '2024-06-21 08:18:08'),
+(32, 'App\\Models\\Committee', 26, 'ac86821f-46f6-498c-87ea-3c58e6f7a422', 'committee', 'Scientific dr. Siska Suridanda Danny, Sp.JP(K)', '0gagP4U0KiamDHtedSNkU5MpU0DJR3-metaU2NpZW50aWZpYyBkci4gU2lza2EgU3VyaWRhbmRhIERhbm55LCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 27495, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:19:53', '2024-06-21 08:19:53'),
+(33, 'App\\Models\\Committee', 27, 'fb66d1dd-3738-4dc5-99d4-50601c3c0487', 'committee', 'Scientific dr. Suko Adiarto, Ph.D, Sp.JP(K)', 'ygLr2lHWu7WRBTPaIpx3sks7RcUGgQ-metaU2NpZW50aWZpYyBkci4gU3VrbyBBZGlhcnRvLCBQaC5ELCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 19649, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:20:25', '2024-06-21 08:20:25'),
+(34, 'App\\Models\\Committee', 28, 'e74023e4-b3ea-4d8c-8a24-43fb4d1982e4', 'committee', 'Scientific dr. Sunu Budhi Raharjo, Ph.D, Sp.JP(K)', 'AgKg8sGDWPAkytvqbXvOBzuaITNi6s-metaU2NpZW50aWZpYyBkci4gU3VudSBCdWRoaSBSYWhhcmpvLCBQaC5ELCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 27478, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:22:10', '2024-06-21 08:22:10'),
+(35, 'App\\Models\\Committee', 29, 'df703a02-4507-471b-9291-d8758c87b252', 'committee', 'Scientific Prof. Dr. dr. Amiliana M. Soesanto, Sp.JP(K)', '9fgCo1OcRFJDmoCI9DEEX0xZeF3Q1Q-metaU2NpZW50aWZpYyBQcm9mLiBEci4gZHIuIEFtaWxpYW5hIE0uIFNvZXNhbnRvLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 26658, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:23:08', '2024-06-21 08:23:08'),
+(37, 'App\\Models\\Committee', 32, '72ecdfe6-6957-41b3-b48a-2f82e5b0d394', 'committee', 'Advisor _ Scientific _ Free Paper and Poster Presentation dr. Bambang Widyantoro, Ph.D, Sp.JP(K)', 'qPWj5N7FLbEtPfK2ATuYJMtJuQEqPS-metaQWR2aXNvciBfIFNjaWVudGlmaWMgXyBGcmVlIFBhcGVyIGFuZCBQb3N0ZXIgUHJlc2VudGF0aW9uIGRyLiBCYW1iYW5nIFdpZHlhbnRvcm8sIFBoLkQsIFNwLkpQKEspLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 25959, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:32:05', '2024-06-21 08:32:05'),
+(38, 'App\\Models\\Committee', 33, 'ec2190a4-4cf1-458e-8a3f-ad6eca5781dc', 'committee', 'Free Paper and Poster Presentation dr. Hary Sakti Muliawan, PhD, Sp.JP', 'q7AeAu8A6tSprrbWPmJsGJ6qmoIRa1-metaRnJlZSBQYXBlciBhbmQgUG9zdGVyIFByZXNlbnRhdGlvbiBkci4gSGFyeSBTYWt0aSBNdWxpYXdhbiwgUGhELCBTcC5KUC5wbmc=-.png', 'image/png', 'public', 'public', 1064080, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:33:59', '2024-06-21 08:33:59'),
+(39, 'App\\Models\\Committee', 34, '4c3ba206-d985-41c6-beac-f30025ebd723', 'committee', 'Cardiology in Jeopardy dr. Dian Zamroni, Sp.JP(K)', 'UMwPSBtKPEuR6W2pTysIEJaEaOwQfj-metaQ2FyZGlvbG9neSBpbiBKZW9wYXJkeSBkci4gRGlhbiBaYW1yb25pLCBTcC5KUChLKS5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 381841, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:35:19', '2024-06-21 08:35:19'),
+(40, 'App\\Models\\Committee', 35, '20bc5bde-bc19-43b4-8a1d-9d70a846d877', 'committee', 'Opening Ceremony, Department Anniversary, Homecoming, Alumni Gathering Day dr. Dony Yugo Hermanto, Sp.JP(K)', 'htzXzNuCIW7XrAmZj4UD1ACOVpSp16-metaT3BlbmluZyBDZXJlbW9ueSwgRGVwYXJ0bWVudCBBbm5pdmVyc2FyeSwgSG9tZWNvbWluZywgQWx1bW5pIEdhdGhlcmluZyBEYXkgZHIuIERvbnkgWXVnbyBIZXJtYW50bywgU3AuSlAoSykuanBlZw==-.jpg', 'image/jpeg', 'public', 'public', 800406, '[]', '[]', '[]', '[]', 1, '2024-06-21 08:38:21', '2024-06-21 08:38:21'),
+(41, 'App\\Models\\Committee', 36, '60bf8abf-6203-484e-919a-41b3b1c55375', 'committee', 'Opening Ceremony, Department Anniversary, Homecoming, Alumni Gathering Day dr. Dwita Rian Desandri, Sp.JP(K)', 'bP43YHl6NaPSiyfGk6pwnin26H3KQ8-metaT3BlbmluZyBDZXJlbW9ueSwgRGVwYXJ0bWVudCBBbm5pdmVyc2FyeSwgSG9tZWNvbWluZywgQWx1bW5pIEdhdGhlcmluZyBEYXkgZHIuIER3aXRhIFJpYW4gRGVzYW5kcmksIFNwLkpQKEspLmpwZWc=-.jpg', 'image/jpeg', 'public', 'public', 295379, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:10:43', '2024-06-21 20:10:43'),
+(43, 'App\\Models\\Committee', 38, '418ed7fe-d14c-4414-b948-9ee22862a812', 'committee', 'Promotion Publication Registration dr. Adelin Dhivi Kemalasari, Sp.JP    ', 'Hf6f3TswtOBFK9tKXwyoP6CohDLIwL-metaUHJvbW90aW9uIFB1YmxpY2F0aW9uIFJlZ2lzdHJhdGlvbiBkci4gQWRlbGluIERoaXZpIEtlbWFsYXNhcmksIFNwLkpQICAgIC5wbmc=-.png', 'image/png', 'public', 'public', 466945, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:25:30', '2024-06-21 20:25:30'),
+(44, 'App\\Models\\Committee', 39, '87a8904b-1ea5-452d-883f-9289276724bb', 'committee', 'Promotion Publication Registration dr. Olfi Lelya, Sp.JP(K)', 'eh6xuBgTb8z1CupS35UXwER5IEVcUb-metaUHJvbW90aW9uIFB1YmxpY2F0aW9uIFJlZ2lzdHJhdGlvbiBkci4gT2xmaSBMZWx5YSwgU3AuSlAoSykucG5n-.png', 'image/png', 'public', 'public', 485507, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:26:04', '2024-06-21 20:26:04'),
+(46, 'App\\Models\\Committee', 41, '94501e85-da40-4d48-bd4e-705031b9b69d', 'committee', 'Website Registration AV Documentation dr. Aditya Agita Sembiring, Sp.JP(K)', 'cG6ODs6M2gbhRILwNhXRmeGEG9Ih9T-metaV2Vic2l0ZSBSZWdpc3RyYXRpb24gQVYgRG9jdW1lbnRhdGlvbiBkci4gQWRpdHlhIEFnaXRhIFNlbWJpcmluZywgU3AuSlAoSykuanBlZw==-.jpg', 'image/jpeg', 'public', 'public', 95333, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:30:43', '2024-06-21 20:30:43'),
+(47, 'App\\Models\\Committee', 42, 'a329103e-851f-4e0e-b16f-c639b97d1542', 'committee', 'Website Registration AV Documentation dr. Bhayu Hanggadhi Nugroho, Sp.JP    ', 'eeljPVfGSGbJ6i1wFwFwLM7nAoYT4O-metaV2Vic2l0ZSBSZWdpc3RyYXRpb24gQVYgRG9jdW1lbnRhdGlvbiBkci4gQmhheXUgSGFuZ2dhZGhpIE51Z3JvaG8sIFNwLkpQICAgIC5qcGVn-.jpg', 'image/jpeg', 'public', 'public', 120722, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:31:31', '2024-06-21 20:31:31'),
+(48, 'App\\Models\\Committee', 43, '8336e270-a985-459c-ae40-a0504243ca94', 'committee', 'Website Registration AV Documentation dr. Prima Almazini, Sp.JP', 'JtZMpjO8YgK27jf9QAhymJo2g6RlVY-metaV2Vic2l0ZSBSZWdpc3RyYXRpb24gQVYgRG9jdW1lbnRhdGlvbiBkci4gUHJpbWEgQWxtYXppbmksIFNwLkpQLnBuZw==-.png', 'image/png', 'public', 'public', 1012304, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:31:58', '2024-06-21 20:31:58'),
+(49, 'App\\Models\\Committee', 44, 'd30fa059-371a-4975-8cd1-544405b273d0', 'committee', 'Accommodation dr. Arwin Saleh Mangkuanom, Sp.JP(K)', '4omWDKZdP98kC0qG5iwqsfc9aeLT1K-metaQWNjb21tb2RhdGlvbiBkci4gQXJ3aW4gU2FsZWggTWFuZ2t1YW5vbSwgU3AuSlAoSykuanBlZw==-.jpg', 'image/jpeg', 'public', 'public', 518896, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:33:01', '2024-06-21 20:33:01'),
+(51, 'App\\Models\\Committee', 45, 'f1abbd5f-0b41-4285-81fd-3e1b17748dc8', 'committee', '-Accomodation-dr.-Nanda-Iryuza,-Sp.JP', 'qWfu2UpcIxWaCfqQwZWZXe82Y4ecBA-metaLUFjY29tb2RhdGlvbi1kci4tTmFuZGEtSXJ5dXphLC1TcC5KUC5qcGc=-.jpg', 'image/jpeg', 'public', 'public', 61204, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:35:38', '2024-06-21 20:35:38'),
+(52, 'App\\Models\\Committee', 40, 'ebbe56e5-d412-4823-b297-971b114c541d', 'committee', 'Promotion-Publication-Registration-dr.-Suci-Indriani,-Sp.JP(K)', 'w3lItEjNOcmdw1lJ9XruArY0Q9wZ5T-metaUHJvbW90aW9uLVB1YmxpY2F0aW9uLVJlZ2lzdHJhdGlvbi1kci4tU3VjaS1JbmRyaWFuaSwtU3AuSlAoSykuanBn-.jpg', 'image/jpeg', 'public', 'public', 82357, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:37:42', '2024-06-21 20:37:42'),
+(53, 'App\\Models\\Committee', 37, 'cd1272b3-2f9f-490e-a80b-8011a31a4a2b', 'committee', 'Opening-Ceremony,-Department-Anniversary,-Homecoming,-Alumni-Gathering-Day-dr.-Ruth-Grace-Aurora,-Sp.JP', '9LTg0BVueULm1CcYggmuIQE8GwYo9f-metaT3BlbmluZy1DZXJlbW9ueSwtRGVwYXJ0bWVudC1Bbm5pdmVyc2FyeSwtSG9tZWNvbWluZywtQWx1bW5pLUdhdGhlcmluZy1EYXktZHIuLVJ1dGgtR3JhY2UtQXVyb3JhLC1TcC5KUC5qcGc=-.jpg', 'image/jpeg', 'public', 'public', 78326, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:38:50', '2024-06-21 20:38:50'),
+(54, 'App\\Models\\Committee', 31, '3061cfdc-9e69-459c-98ff-31175a5fb5ff', 'committee', 'Workshop-dr.-Estu-Rudiktyo,-Sp.JP(K)', 'LShh1i6bpHCXACB6qvjPibZgtY3o0G-metaV29ya3Nob3AtZHIuLUVzdHUtUnVkaWt0eW8sLVNwLkpQKEspLmpwZw==-.jpg', 'image/jpeg', 'public', 'public', 70815, '[]', '[]', '[]', '[]', 1, '2024-06-21 20:39:49', '2024-06-21 20:39:49');
 
 -- --------------------------------------------------------
 
@@ -216,7 +282,10 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (46, '2024_06_18_142001_create_reg_infos_table', 8),
 (47, '2024_06_19_155020_create_committees_table', 9),
 (48, '2024_06_19_160933_add_image_column_to_committees', 10),
-(49, '2024_06_20_154209_add_no_urut_column_to_committees', 11);
+(49, '2024_06_20_154209_add_no_urut_column_to_committees', 11),
+(51, '2024_06_22_065916_create_schedule_sessions_table', 12),
+(52, '2024_06_22_072452_add_moderator_id_column_to_schedule_sessions', 13),
+(53, '2024_06_22_080552_create_scientific_schedules_table', 14);
 
 -- --------------------------------------------------------
 
@@ -274,20 +343,59 @@ INSERT INTO `reg_infos` (`id`, `title`, `slug`, `description`, `created_at`, `up
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `schedule_sessions`
+--
+
+CREATE TABLE `schedule_sessions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `session` varchar(255) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `timeStart` time DEFAULT NULL,
+  `timeEnd` time DEFAULT NULL,
+  `room` varchar(255) NOT NULL,
+  `moderator_id` bigint(20) UNSIGNED NOT NULL,
+  `is_published` tinyint(1) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `schedule_sessions`
+--
+
+INSERT INTO `schedule_sessions` (`id`, `session`, `date`, `timeStart`, `timeEnd`, `room`, `moderator_id`, `is_published`, `created_at`, `updated_at`) VALUES
+(1, 'Plenary Lecture 1', '2024-10-26', '08:00:00', '09:00:00', 'Pecatu Hall 1', 14, 1, '2024-06-22 00:48:21', '2024-06-22 00:48:21'),
+(2, 'Plenary Lecuture 2', '2024-10-27', '08:00:00', '09:00:00', 'Pecatu Hall 1', 13, 1, '2024-06-22 00:49:14', '2024-06-22 07:13:48'),
+(3, 'Symposium 1', '2024-10-26', '10:00:00', '11:00:00', 'Pecatu Hall 1', 16, 1, '2024-06-23 06:29:55', '2024-06-23 06:29:55');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `scientific_schedules`
 --
 
 CREATE TABLE `scientific_schedules` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `session` varchar(255) DEFAULT NULL,
-  `date` date DEFAULT NULL,
-  `time` varchar(255) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `facuty_id` bigint(20) UNSIGNED NOT NULL,
+  `session_id` bigint(20) UNSIGNED NOT NULL,
+  `timeStart` time DEFAULT NULL,
+  `timeEnd` time DEFAULT NULL,
+  `topic` varchar(255) NOT NULL,
+  `faculty_id` bigint(20) UNSIGNED NOT NULL,
   `is_published` tinyint(1) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `scientific_schedules`
+--
+
+INSERT INTO `scientific_schedules` (`id`, `session_id`, `timeStart`, `timeEnd`, `topic`, `faculty_id`, `is_published`, `created_at`, `updated_at`) VALUES
+(5, 1, '09:20:00', '09:40:00', 'Lecture 1', 15, 1, '2024-06-22 07:16:20', '2024-06-22 07:16:20'),
+(6, 1, '09:00:00', '09:20:00', 'Cervical Corpectomy Reconstructions', 13, 1, '2024-06-22 07:19:32', '2024-06-22 07:19:32'),
+(7, 2, '09:00:00', '09:20:00', 'Endoscopy', 16, 1, '2024-06-22 07:20:55', '2024-06-22 07:20:55'),
+(8, 3, '10:00:00', '10:20:00', 'lorem ipsum color', 13, 1, '2024-06-23 06:30:48', '2024-06-23 06:30:48'),
+(9, 3, '10:20:00', '10:40:00', 'percobaan lagi', 15, 1, '2024-06-23 07:07:43', '2024-06-23 07:08:24');
 
 -- --------------------------------------------------------
 
@@ -410,11 +518,19 @@ ALTER TABLE `reg_infos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `schedule_sessions`
+--
+ALTER TABLE `schedule_sessions`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `schedule_sessions_moderator_id_foreign` (`moderator_id`);
+
+--
 -- Indexes for table `scientific_schedules`
 --
 ALTER TABLE `scientific_schedules`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `scientific_schedules_facuty_id_foreign` (`facuty_id`);
+  ADD KEY `scientific_schedules_session_id_foreign` (`session_id`),
+  ADD KEY `scientific_schedules_faculty_id_foreign` (`faculty_id`);
 
 --
 -- Indexes for table `type_participants`
@@ -443,19 +559,19 @@ ALTER TABLE `at_glances`
 -- AUTO_INCREMENT for table `committees`
 --
 ALTER TABLE `committees`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `faculties`
 --
 ALTER TABLE `faculties`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `faculty_type_participant`
 --
 ALTER TABLE `faculty_type_participant`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -467,13 +583,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -488,10 +604,16 @@ ALTER TABLE `reg_infos`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `schedule_sessions`
+--
+ALTER TABLE `schedule_sessions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `scientific_schedules`
 --
 ALTER TABLE `scientific_schedules`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `type_participants`
@@ -517,10 +639,17 @@ ALTER TABLE `faculty_type_participant`
   ADD CONSTRAINT `faculty_type_participant_type_participant_id_foreign` FOREIGN KEY (`type_participant_id`) REFERENCES `type_participants` (`id`);
 
 --
+-- Constraints for table `schedule_sessions`
+--
+ALTER TABLE `schedule_sessions`
+  ADD CONSTRAINT `schedule_sessions_moderator_id_foreign` FOREIGN KEY (`moderator_id`) REFERENCES `faculties` (`id`);
+
+--
 -- Constraints for table `scientific_schedules`
 --
 ALTER TABLE `scientific_schedules`
-  ADD CONSTRAINT `scientific_schedules_facuty_id_foreign` FOREIGN KEY (`facuty_id`) REFERENCES `faculties` (`id`);
+  ADD CONSTRAINT `scientific_schedules_faculty_id_foreign` FOREIGN KEY (`faculty_id`) REFERENCES `faculties` (`id`),
+  ADD CONSTRAINT `scientific_schedules_session_id_foreign` FOREIGN KEY (`session_id`) REFERENCES `schedule_sessions` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

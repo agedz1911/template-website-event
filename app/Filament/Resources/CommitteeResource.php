@@ -44,7 +44,7 @@ class CommitteeResource extends Resource
                 TextColumn::make('id'),
                 TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('title'),
-                TextColumn::make('category'),
+                TextColumn::make('category')->limit(20),
                 TextColumn::make('no_urut')->sortable(),
                 SpatieMediaLibraryImageColumn::make('image')
                     ->collection('committee'),

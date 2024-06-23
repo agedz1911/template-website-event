@@ -7,6 +7,7 @@ use App\Filament\Resources\RegInfoResource\RelationManagers;
 use App\Models\RegInfo;
 use Filament\Forms;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Forms\Set;
@@ -34,7 +35,8 @@ class RegInfoResource extends Resource
                     ->live(onBlur:true)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                 TextInput::make('slug'),
-                MarkdownEditor::make('description'),
+                Textarea::make('description')->rows(8)
+                // MarkdownEditor::make('description'),
             ]);
     }
 

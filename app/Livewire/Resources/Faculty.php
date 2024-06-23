@@ -7,9 +7,9 @@ use Livewire\Component;
 
 class Faculty extends Component
 {
-        public function render()
-        {
-            $faculties = ModelsFaculty::where('is_active', 1)->get();
-            return view('livewire.resources.faculty', ['faculties' => $faculties]);
-        }
+    public function render()
+    {
+        $faculties = ModelsFaculty::where('is_active', 1)->get();
+        return view('livewire.resources.faculty', ['faculties' => $faculties]);
+    }
 }

@@ -25,10 +25,15 @@ class faculty extends Model implements HasMedia
         'image'
     ];
 
-    public function scientific_schedule(): HasMany
+    public function schedule_faculty(): HasMany
     {
         return $this->hasMany(ScientificSchedule::class);
-    } 
+    }
+    
+    public function sesi_schedule(): HasMany
+    {
+        return $this->hasMany(ScheduleSession::class);
+    }
 
     public function type_participants(): BelongsToMany
     {

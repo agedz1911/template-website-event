@@ -5,27 +5,29 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class ScientificSchedule extends Model
+class ScheduleSession extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'session_id',
+        'session',
+        'date',
         'timeStart',
         'timeEnd',
-        'topic',
-        'faculty_id',
+        'room',
+        'moderator_id',
         'is_published'
     ];
 
-    public function faculty(): BelongsTo
+    public function moderator(): BelongsTo
     {
         return $this->belongsTo(faculty::class);
     }
 
-    public function session(): BelongsTo
+    public function schedule(): HasMany
     {
-        return $this->belongsTo(ScheduleSession::class);
+        return $this->hasMany(ScientificSchedule::class, 'session_id', 'id');
     }
 }

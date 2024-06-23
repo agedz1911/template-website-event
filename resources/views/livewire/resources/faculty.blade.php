@@ -4,15 +4,15 @@
         <div class="card glass">
             <figure class="">
                 @if($faculty->getMedia('images')->isEmpty())
-                <div class="avatar">
-                    <div class="rounded-lg">
+                <div class="avatar p-3">
+                    <div class="rounded-full ring ring-primary  ring-offset-base-100 ring-offset-4">
                         <img src="{{ asset('images/doctor.png') }}" alt="Default Doctor Image" class="rounded-lg" />
                     </div>
                 </div>
                 @else
                 @foreach($faculty->getMedia('images') as $image)
-                <div class="avatar px-0 pt-2">
-                    <div class="rounded-full">
+                <div class="avatar p-3">
+                    <div class="rounded-full ring ring-primary  ring-offset-base-100 ring-offset-4">
                         <img src="{{ $image->getUrl() }}" alt="{{$faculty->name}}" />
                     </div>
                 </div>
@@ -20,10 +20,13 @@
                 @endif
             </figure>
             <div class="card-body">
-                <h2 class="card-title text-primary-800">{{$faculty->name}}</h2>
-                <p>{{$faculty->country}}</p>
+                <h2 class="card-title text-primary-800 hover:cursor-pointer">
+                    {{$faculty->name}}
+                </h2>
+                <p class="">{{$faculty->country}}</p>
             </div>
         </div>
         @endforeach
+
     </div>
 </div>
