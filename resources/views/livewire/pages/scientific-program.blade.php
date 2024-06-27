@@ -6,7 +6,7 @@
         </div>
 
         <div class="container mx-auto items-center">
-            <livewire:resources.atglance />
+            {{-- <livewire:resources.atglance /> --}}
         </div>
     </div>
     <div class="bg-local pt-28 pb-52 lg:px-20 px-5 bg-doctor bg-primary-50" id="schedule">

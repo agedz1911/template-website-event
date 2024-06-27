@@ -24,7 +24,7 @@
             </div>
             <ul class="site-menu-main">
               <li class="nav-item {{ request()->is('/') ? 'text-primary-500' : '' }}">
-                <a href="/"  class="nav-link-item hover:text-primary-500">Home</a>
+                <a href="/" class="nav-link-item hover:text-primary-500">Home</a>
               </li>
               <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
                 <a href="javascript:void(0)" class="nav-link-item drop-trigger  hover:text-primary-500">Congress Information <i class="fa-solid fa-angle-down"></i>
@@ -43,7 +43,7 @@
               </li>
 
               <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-primary-500' : '' }}">
-                <a href="javascript:void(0)"  class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
+                <a href="javascript:void(0)" class="nav-link-item drop-trigger hover:text-primary-500">Scientific Program
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="sub-menu" id="submenu-2">
@@ -56,7 +56,7 @@
                 </ul>
               </li>
               <li class="nav-item {{ request()->is('registration*') ? 'text-primary-500' : '' }}">
-                <a href="/registration"  class="nav-link-item hover:text-primary-500">Registration
+                <a href="/registration" class="nav-link-item hover:text-primary-500">Registration
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
@@ -83,7 +83,7 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
               </li>
-              
+
             </ul>
           </nav>
         </div>
@@ -94,7 +94,6 @@
           <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D" class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
           <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
-          <!-- <a class="btn btn-primary md:hidden sm:inline-block py-4">Login</a> -->
           <!-- Responsive Offcanvas Menu Button -->
           <div class="block lg:hidden">
             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
@@ -103,189 +102,133 @@
               <span></span>
             </button>
           </div>
+          <!-- <button class="btn bg-primary-200 hover:bg-primary-600 hover:text-white border-none inline-block" onclick="signup.showModal()"><i class="fa-solid fa-user-plus"></i> Sign up</button> -->
+          <button class="btn bg-primary-800 hover:bg-primary-600 text-white inline-block" onclick="login.showModal()"><i class="fa-solid fa-lock"></i> Sign in</button>
         </div>
         <!-- Header User Event -->
       </div>
     </div>
   </header>
-</div>
 
-<!-- <div class="sticky top-0 z-50">
-    <div class="navbar absolute px-5 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
+  <dialog id="signup" class="modal">
+    <div class="modal-box">
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      </form>
+      <div class="flex flex-col gap-2">
+        <div class="text-center mb-5">
+          <h3 class="text-lg font-bold">Sign up</h3>
+          <h3 class="text-lg font-bold">WECOC</h3>
+        </div>
+        <div class="flex flex-col md:flex-row gap-2">
+          <label class="form-control w-full">
+            <div class="label">
+              <span class="label-text">First Name</span>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <input type="text" placeholder="John" class="input input-bordered rounded-lg input-primary w-full " />
+          </label>
+          <label class="form-control w-full">
+            <div class="label">
+              <span class="label-text">Last Name</span>
+            </div>
+            <input type="text" placeholder="Doe" class="input input-bordered rounded-lg input-primary w-full " />
+          </label>
         </div>
-        <div class="navbar-center text-lime-200 hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="#tes"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li>
-                    <details>
-                        <summary><i class="fa-solid fa-circle-info"></i> Congress Information</summary>
-                        <ul class="p-2 w-[200px] bg-slate-600">
-                            <li><a>Welcome Message</a></li>
-                            <li><a>Organizing Committee</a></li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-
-                        <summary><i class="fa-solid fa-book-open"></i> Scientific Program</summary>
-                        <ul class="p-2 w-[200px] bg-slate-600">
-                            <li><a>Program at Glance</a></li>
-                            <li><a>Scientific Schedule</a></li>
-                        </ul>
-                    </details>
-                </li>
-                <li><a><i class="fa-solid fa-basket-shopping"></i> Registration</a></li>
-                <li>
-                    <details>
-                        <summary><i class="fa-solid fa-cloud-arrow-up"></i> Submission</summary>
-                        <ul class="p-2 w-[200px] bg-slate-600">
-                            <li><a>Guideline for Abstract</a></li>
-                            <li><a>Abstract Submission</a></li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
+        <label class="form-control w-full">
+          <div class="label">
+            <span class="label-text">Email</span>
+          </div>
+          <input type="email" placeholder="JohnDoe@mail.com" class="input input-bordered rounded-lg input-primary w-full " />
+        </label>
+        <label class="form-control w-full">
+          <div class="label">
+            <span class="label-text">Password</span>
+          </div>
+          <input type="password" placeholder="*********" class="input input-bordered rounded-lg input-primary w-full " />
+        </label>
+        <div class="modal-action">
+          <button class="btn bg-primary-900 hover:bg-primary-600 text-white"><i class="fa-solid fa-user"></i> Submit</button>
+          <form method="dialog">
+            <button class="btn"><i class="fa-solid fa-x"></i> Close</button>
+          </form>
         </div>
-        <div class="navbar-end">
-            <a class="btn">Button</a>
-        </div>
+      </div>
     </div>
-</div> 
-<li class="nav-item nav-item-has-children">
-                <a href="#" class="nav-link-item drop-trigger">Submission
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="sub-menu" id="submenu-3">
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">Guideline for Abstract <i class="fa-solid fa-angle-right"></i></a>
-                    <ul class="sub-menu shape-none" id="submenu-4">
-                      <li class="sub-menu--item">
-                        <a href="blog.html">Abstract Submission</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="blog-details.html">blog details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">Team
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <ul class="sub-menu shape-none" id="submenu-5">
-                      <li class="sub-menu--item">
-                        <a href="teams.html">Teams</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">FAQ
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <ul class="sub-menu shape-none" id="submenu-6">
-                      <li class="sub-menu--item">
-                        <a href="faq.html">FAQ-1</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="faq-2.html">FAQ-2</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="faq-3.html">FAQ-3</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="faq-4.html">FAQ-4</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">Portfolio
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <ul class="sub-menu shape-none" id="submenu-7">
-                      <li class="sub-menu--item">
-                        <a href="portfolio.html">Portfolio Classic</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="portfolio-2.html">Portfolio Masonry</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="portfolio-3.html">Portfolio Modern</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="portfolio-4.html">Portfolio Minimal</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="portfolio-details.html">Portfolio Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">Pricing
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <ul class="sub-menu shape-none" id="submenu-8">
-                      <li class="sub-menu--item">
-                        <a href="pricing.html">Pricing-1</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="pricing-2.html">Pricing-2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">Careers
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <ul class="sub-menu shape-none" id="submenu-9">
-                      <li class="sub-menu--item">
-                        <a href="careers.html">Career</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="career-details.html">Career Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu--item nav-item-has-children">
-                    <a href="#" data-menu-get="h3" class="drop-trigger">Utilities
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <ul class="sub-menu shape-none" id="submenu-10">
-                      <li class="sub-menu--item">
-                        <a href="login.html">Login</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="signup.html">Signup</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="reset-password.html">Reset Password</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="coming-soon.html">Coming Soon</a>
-                      </li>
-                      <li class="sub-menu--item">
-                        <a href="error-404.html">Error 404</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>-->
+  </dialog>
+
+  <dialog id="login" class="modal">
+    <div class="modal-box w-full max-w-3xl bg-slate-50">
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      </form>
+      <div class="text-center py-5">
+        <h3 class="text-lg text-primary-900 font-bold">The 36<sup>th</sup> WECOC <br> Weekend Course on Cardiology</h3>
+      </div>
+      <div x-data="{ openTab: 1 }" class="p-2">
+        <div class="w-full mx-auto">
+          <div class="mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
+            <button x-on:click="openTab = 1" :class="{ 'bg-primary-600 text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-primary transition-all duration-300">Sign in</button>
+            <button x-on:click="openTab = 2" :class="{ 'bg-primary-600 text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-primary transition-all duration-300">Sign up</button>
+          </div>
+
+          <div x-show="openTab === 1" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-primary-600">
+            <div class="flex flex-col items-center justify-center gap-2">
+
+              <label class="form-control w-full max-w-lg">
+                <div class="label">
+                  <span class="label-text">Email</span>
+                </div>
+                <input type="email" placeholder="JohnDoe@mail.com" class="input input-bordered rounded-lg input-primary w-full " />
+              </label>
+              <label class="form-control w-full max-w-lg">
+                <div class="label">
+                  <span class="label-text">Password</span>
+                </div>
+                <input type="password" placeholder="*********" class="input input-bordered rounded-lg input-primary w-full " />
+              </label>
+              <button class="btn bg-primary-900 hover:bg-primary-600 text-white w-full mt-3 mb-6 max-w-lg"> Sign in</button>
+            </div>
+          </div>
+
+          <div x-show="openTab === 2" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-primary-600">
+            <div class="flex flex-col items-center justify-center gap-2">
+              <div class="flex max-w-lg w-full flex-col md:flex-row gap-2">
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text">First Name</span>
+                  </div>
+                  <input type="text" placeholder="John" class="input input-bordered rounded-lg input-primary w-full " />
+                </label>
+                <label class="form-control w-full ">
+                  <div class="label">
+                    <span class="label-text">Last Name</span>
+                  </div>
+                  <input type="text" placeholder="Doe" class="input input-bordered rounded-lg input-primary w-full " />
+                </label>
+              </div>
+              <label class="form-control w-full max-w-lg">
+                <div class="label">
+                  <span class="label-text">Email</span>
+                </div>
+                <input type="email" placeholder="JohnDoe@mail.com" class="input input-bordered rounded-lg input-primary w-full " />
+              </label>
+              <label class="form-control w-full max-w-lg">
+                <div class="label">
+                  <span class="label-text">Password</span>
+                </div>
+                <input type="password" placeholder="*********" class="input input-bordered rounded-lg input-primary w-full " />
+              </label>
+              <button class="btn bg-primary-900 hover:bg-primary-600 text-white w-full mt-3 mb-6 max-w-lg"> Sign up</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn"> Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+</div>
