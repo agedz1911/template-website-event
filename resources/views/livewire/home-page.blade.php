@@ -180,7 +180,8 @@
     </div>
     {{-- Start Counter --}}
     <div class="bg-scroll bg-counter relative lg:px-20 px-5 py-52">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4 text-white justify-items-start lg:justify-items-center">
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-2 xl:grid-cols-4 text-white justify-items-start lg:justify-items-center"> -->
+            <div class="text-white flex flex-col md:flex-row flex-wrap justify-between items-start gap-4">
             <div class="flex items-center gap-5">
                 <div class="avatar transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                     <div class="w-32 border-b-[10px] border-primary-600 rounded-full bg-slate-100">

@@ -61,6 +61,9 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::hex('#11593c'),
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
+            ])
+            ->plugins([
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
             ]);
     }
 }
