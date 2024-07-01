@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\Dashboard\Home;
+use App\Livewire\Forms\Signin;
+use App\Livewire\HomeDashboard;
 use App\Livewire\HomePage;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
@@ -35,6 +38,4 @@ Route::prefix('/submission')->group(function () {
     Route::get('/#guideline-abstract', Submission::class);
     Route::get('/#submission', Submission::class);
 });
-
 Route::get('/registration', Registration::class);
-

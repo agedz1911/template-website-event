@@ -28,7 +28,7 @@
 </head>
 
 <body class="antialiased">
-
+    @include('sweetalert::alert')
     <x-nav.menu />
 
     {{ $slot }}

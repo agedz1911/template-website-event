@@ -7,6 +7,7 @@ use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Pages\CreateRecord;
@@ -30,12 +31,12 @@ class UserResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->required(),
+                TextInput::make('name')->required()->label('First Name'),
+                TextInput::make('last_name')->required(),
                 TextInput::make('email')->email()->unique(ignoreRecord: true),
                 TextInput::make('password')
                     ->required(fn (Page $livewire) => ($livewire instanceof CreateRecord))
                     ->password()
-
                     ->dehydrateStateUsing(fn ($state) => Hash::make($state))
                     ->dehydrated(fn ($state) => filled($state)),
                 Select::make('role')
@@ -49,7 +50,8 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name'),
+                TextColumn::make('name')->label('First Name'),
+                TextColumn::make('last_name'),
                 TextColumn::make('email'),
                 TextColumn::make('roles.name'),
                 TextColumn::make('created_at'),
