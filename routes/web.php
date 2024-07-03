@@ -1,8 +1,6 @@
 <?php
 
-use App\Livewire\Dashboard\Home;
-use App\Livewire\Forms\Signin;
-use App\Livewire\HomeDashboard;
+use App\Livewire\Dashboard\HomeDashboard;
 use App\Livewire\HomePage;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
@@ -21,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', HomePage::class);
+Route::get('/', HomePage::class)->name('home');
 Route::prefix('/congress-information')->group(function () {
     Route::get('/', CongressInformation::class);
     Route::get('#welcome-message', CongressInformation::class);
@@ -39,3 +37,5 @@ Route::prefix('/submission')->group(function () {
     Route::get('/#submission', Submission::class);
 });
 Route::get('/registration', Registration::class);
+
+Route::get('/dashboard', HomeDashboard::class)->middleware('auth', 'verified');

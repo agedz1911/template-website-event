@@ -26,8 +26,7 @@
               <li class="nav-item {{ request()->is('/') ? 'text-primary-500' : '' }}">
                 <a href="/" class="nav-link-item hover:text-primary-500">Home</a>
               </li>
-              <li
-                class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
+              <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
                 <a href="javascript:void(0)" class="nav-link-item drop-trigger  hover:text-primary-500">Congress
                   Information <i class="fa-solid fa-angle-down"></i>
                 </a>
@@ -44,8 +43,7 @@
                 </ul>
               </li>
 
-              <li
-                class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-primary-500' : '' }}">
+              <li class="nav-item nav-item-has-children {{ request()->is('scientific-program*') ? 'text-primary-500' : '' }}">
                 <a href="javascript:void(0)" class="nav-link-item drop-trigger hover:text-primary-500">Scientific
                   Program
                   <i class="fa-solid fa-angle-down"></i>
@@ -95,13 +93,9 @@
 
         <!-- Header User Event -->
         <div class="flex items-center gap-1">
-          <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D"
-            class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i
-              class="fa-brands fa-instagram text-rose-500 "></i></a>
-          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i
-              class="fa-brands fa-facebook text-sky-500 "></i></a>
-          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i
-              class="fa-brands fa-square-x-twitter "></i></a>
+          <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D" class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
+          <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
           <!-- Responsive Offcanvas Menu Button -->
           <div class="block lg:hidden">
             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
@@ -127,7 +121,7 @@
                   <span class="badge">{{ Auth::user()->name}}!</span>
                 </a>
               </li>
-              <li><a>Dashboard</a></li>
+              <li><a href="/dashboard" wire:navigate class="link link-hover">Dashboard</a></li>
               <li>
                 <livewire:forms.signout />
               </li>
@@ -151,21 +145,17 @@
       <div x-data="{ openTab: 1 }" class="p-2">
         <div class="w-full mx-auto">
           <div class="mb-4 flex space-x-4 p-2 bg-white rounded-lg shadow-md">
-            <button x-on:click="openTab = 1" :class="{ 'bg-primary-600 text-white': openTab === 1 }"
-              class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-primary transition-all duration-300">Sign
+            <button x-on:click="openTab = 1" :class="{ 'bg-primary-600 text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-primary transition-all duration-300">Sign
               in</button>
-            <button x-on:click="openTab = 2" :class="{ 'bg-primary-600 text-white': openTab === 2 }"
-              class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-primary transition-all duration-300">Sign
+            <button x-on:click="openTab = 2" :class="{ 'bg-primary-600 text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-primary transition-all duration-300">Sign
               up</button>
           </div>
 
-          <div x-show="openTab === 1"
-            class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-primary-600">
+          <div x-show="openTab === 1" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-primary-600">
             <livewire:forms.signin />
           </div>
 
-          <div x-show="openTab === 2"
-            class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-primary-600">
+          <div x-show="openTab === 2" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-primary-600">
             <livewire:forms.signup />
           </div>
 

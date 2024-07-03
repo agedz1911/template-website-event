@@ -56,7 +56,11 @@ class Signup extends Component implements HasForms
         $user = User::create($this->form->getState());
         $roleId = Role::where('name', 'user')->first()->id ?? 1;
         $user->assignRole($roleId);
-        session()->flash('status', 'User Created');
+        Notification::make()
+            ->title('User created')
+            ->success()
+            ->send();
+        // session()->flash('status', 'User Created');
         // return redirect()->to('/');
         // Alert::success('Succesfully!', 'User Created');
         $this->form->fill();

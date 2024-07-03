@@ -18,8 +18,10 @@ class Signout extends Component
         Notification::make()
             ->title('Successfully logged out')
             ->success()
+            ->color('success')
+            ->icon('heroicon-o-lock-closed')
             ->send();
-        Alert::success('success', 'Successfully logged out');
+        // Alert::success('success', 'Successfully logged out');
         return redirect()->to('/');
     }
     public function render()

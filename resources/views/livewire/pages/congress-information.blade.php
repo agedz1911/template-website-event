@@ -57,7 +57,8 @@
             <h4 class="text-2xl text-primary-600 font-semibold">Congress Information</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Welcome Message</h1>
         </div>
-        <div class="flex flex-col gap-3">
+        <livewire:resources.welcome-message />
+        <!-- <div class="flex flex-col gap-3">
             <p class="text-justify">Weekend Course in Cardiology (WECOC): Augmenting Intelligence in Cardiology and Vascular Medicine</p>
             <p class="text-justify">The Weekend Course in Cardiology (WECOC), hosted by the Department of Cardiology and Vascular Medicine at the Faculty of Medicine, Universitas Indonesia, has been a cornerstone of scientific excellence since its inception in 1989. This annual event, which continues to thrive, serves as a vital platform for medical professionals to stay abreast of cutting-edge advancements in cardiology.</p>
             <p class="text-justify">Key Highlights of WECOC:
@@ -88,7 +89,7 @@
                     The 36<sup>th</sup> Weekend Course of Cardiology
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <div class="pt-24 pb-52 lg:px-20 px-5" id="organizing-committee">
