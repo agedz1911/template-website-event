@@ -105,25 +105,36 @@
             </button>
           </div>
           @guest
-          <button class="btn bg-primary-800 hover:bg-primary-600 text-white inline-block" onclick="login.showModal()">
-            <i class="fa-solid fa-lock"></i> Sign in</button>
+          <x-nav.auth />
+          <!-- <button class="btn bg-primary-800 hover:bg-primary-600 text-white inline-block" onclick="login.showModal()">
+            <i class="fa-solid fa-lock"></i> Sign in</button> -->
           @else
           <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full ring-primary ring-offset-base-100  ring ring-offset-2">
-                <img alt="user" src="images/doctor.png" class="ring" />
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="avatar">
+                <div class="w-8 rounded-full ring-primary ring-offset-base-100 ring ring-offset-2">
+                  <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}+{{Auth::user()->last_name}}" />
+                </div>
               </div>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-lg z-[1] mt-3 w-52 p-2 shadow">
               <li>
                 <a class="justify-between">
                   Hallo,
                   <span class="badge">{{ Auth::user()->name}}!</span>
                 </a>
               </li>
-              <li><a href="/dashboard" wire:navigate class="link link-hover">Dashboard</a></li>
               <li>
-                <livewire:forms.signout />
+                <a href="/dashboard" wire:navigate  class="link link-hover justify-between">
+                  Dashboard
+                  <span><i class="fa-solid fa-gear"></i> </span>
+                </a>
+              </li>
+              <li>
+                <div class="justify-between">
+                  <livewire:forms.signout />
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
               </li>
             </ul>
           </div>
@@ -134,7 +145,7 @@
     </div>
   </header>
 
-  <dialog id="login" class="modal">
+  <!-- <dialog id="login" class="modal">
     <div class="modal-box w-full max-w-2xl bg-slate-50">
       <form method="dialog">
         <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -167,5 +178,5 @@
         </form>
       </div>
     </div>
-  </dialog>
+  </dialog> -->
 </div>

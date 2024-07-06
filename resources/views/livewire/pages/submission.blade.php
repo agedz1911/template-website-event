@@ -65,7 +65,8 @@
                 </summary>
 
                 <ul class="list-decimal px-10 mt-4 leading-relaxed text-slate-500">
-                    <li><span class="font-semibold text-slate-800"> Original research, Meta-analysis/Systematic review</span>
+                    <li><span class="font-semibold text-slate-800"> Original research, Meta-analysis/Systematic
+                            review</span>
                         <ul class="list-disc mx-5">
                             <li>The abstract must be uploaded using an A4 paper size, in the format of Microsoft
                                 Word (.docx), font type: Times New Roman/Arial/Calibri 11pt</li>
@@ -234,10 +235,37 @@
         </div>
 
     </div>
-    <div class="pt-28 pb-52 lg:px-20 px-5 min-h-screen bg-slate-200" id="submission">
+    <div class="pt-28 pb-52 lg:px-20 px-5 bg-slate-50" id="submission">
         <div class="flex-col flex gap-3 mb-10">
             <h4 class="text-2xl text-primary-600 font-semibold">Submission</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Abstract Submission</h1>
+        </div>
+
+        <div class="container mx-auto">
+            @guest
+            <x-nav.auth />
+            @else
+            <div class="card bg-white shadow-md w-full max-w-3xl mb-5">
+                <div class="card-body">
+                    <div class="flex flex-row gap-3 items-start justify-between">
+                        <div class="flex flex-row items-start  gap-3">
+                            <div>
+                                <h2 class="card-title">Author</h2>
+                                <span>{{$user->code_participant}}</span>
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">{{$user->name}} {{$user->last_name}}</h2>
+                                <p class="italic text-sm text-gray-400">{{$user->email}}</p>
+                                <p class="italic text-sm text-gray-400">{{$user->country}}</p>
+                                <p class="italic text-sm text-gray-400">{{$user->institution}}</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline justify-end">Biodata</button>
+                    </div>
+                </div>
+            </div>
+            <livewire:forms.paper-submission />
+            @endguest
         </div>
     </div>
 </div>

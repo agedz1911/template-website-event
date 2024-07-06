@@ -1,6 +1,10 @@
 <?php
 
+use App\Livewire\Dashboard\FreepaperDashboard;
 use App\Livewire\Dashboard\HomeDashboard;
+use App\Livewire\Dashboard\ProfileDashboard;
+use App\Livewire\Dashboard\SubmissionDashboard;
+use App\Livewire\Forms\Signout;
 use App\Livewire\HomePage;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
@@ -38,4 +42,9 @@ Route::prefix('/submission')->group(function () {
 });
 Route::get('/registration', Registration::class);
 
-Route::get('/dashboard', HomeDashboard::class)->middleware('auth', 'verified');
+
+Route::prefix('/dashboard')->group(function () {
+    Route::get('/', HomeDashboard::class)->middleware('auth', 'verified');
+    Route::get('/profile', ProfileDashboard::class)->middleware('auth', 'verified');
+    Route::get('/submission', SubmissionDashboard::class)->middleware('auth', 'verified');
+});

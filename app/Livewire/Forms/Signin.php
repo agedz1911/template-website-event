@@ -32,10 +32,14 @@ class Signin extends Component
                 ->color('success')
                 ->icon('heroicon-o-lock-open')
                 ->send();
-            // Alert::success('Success', 'Successfully signed in');
             return redirect()->intended('/');
         }
-
+        // Notification::make()
+        //     ->title('Invalid credentials')
+        //     ->color('danger')
+        //     ->iconColor('danger')
+        //     ->icon('heroicon-o-x-circle')
+        //     ->send();
         return back()->with('error', 'Invalid credentials');
     }
 

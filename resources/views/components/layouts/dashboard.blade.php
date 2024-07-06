@@ -27,10 +27,9 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="antialiased">
+<body class="antialiased ">
     <div class="fixed w-full z-30 flex bg-white dark:bg-[#0F172A] p-2 items-center justify-center h-16 px-10 border-b">
-        <div
-            class="logo ml-12 dark:text-white  transform ease-in-out duration-500 flex-none h-full flex items-center justify-center">
+        <div class="logo ml-12 dark:text-white  transform ease-in-out duration-500 flex-none h-full flex items-center justify-center">
             Event Template Website
         </div>
         <!-- SPACER -->
@@ -39,10 +38,14 @@
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="flex space-x-3 items-center px-3">
                     <div class="flex-none flex justify-center">
-                        <div class="w-8 h-8 flex ">
-                            <img src="/images/doctor.png" alt="profile"
-                                class="shadow rounded-full object-cover ring-primary ring-offset-base-100 ring ring-offset-2" />
+                        <div class="avatar">
+                            <div class="w-8 rounded-full ring-primary ring-offset-base-100 ring ring-offset-2">
+                                <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}+{{Auth::user()->last_name}}" />
+                            </div>
                         </div>
+                        <!-- <div class="w-8 h-8 flex ">
+                            <img src="/images/doctor.png" alt="profile" class="shadow rounded-full object-cover ring-primary ring-offset-base-100 ring ring-offset-2" />
+                        </div> -->
                     </div>
                     <div class="hidden md:block text-sm md:text-md text-black dark:text-white">
                         @auth
@@ -51,9 +54,13 @@
                     </div>
                 </div>
                 <ul tabindex="0" class="dropdown-content menu bg-base-100  rounded-box z-[1] w-52 p-2 shadow mt-2">
-                    <li><a href="/">Home Page</a></li>
                     <li>
-                        <div class="flex flex-row justify-between">
+                        <a class="link link-hover justify-between" href="/">Home Page
+                            <span><i class="fa-solid fa-globe"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="justify-between">
                             <livewire:forms.signout />
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>
                         </div>
@@ -62,10 +69,12 @@
             </div>
         </div>
     </div>
-    <x-nav.side-menu />
 
-    <div class="content ml-12 transform ease-in-out duration-500 pt-14 px-2 md:px-5 pb-4 ">
-        <div class="flex flex-wrap my-5 -mx-2">
+    <x-nav.side-menu />
+    @livewire('notifications')
+
+    <div class="content bg-slate-50 ml-12 transform ease-in-out duration-500 pt-14 px-2 md:px-5 pb-4">
+        <div class="flex flex-wrap my-5 -mx-2 lg:p-10 w-full dark:text-white">
             {{ $slot }}
         </div>
     </div>
@@ -81,12 +90,12 @@
         const moon = document.querySelector(".moon")
         const sun = document.querySelector(".sun")
 
-        function setDark(val){
-            if(val === "dark"){
+        function setDark(val) {
+            if (val === "dark") {
                 document.documentElement.classList.add('dark')
                 moon.classList.add("hidden")
                 sun.classList.remove("hidden")
-            }else{
+            } else {
                 document.documentElement.classList.remove('dark')
                 sun.classList.add("hidden")
                 moon.classList.remove("hidden")
@@ -94,7 +103,7 @@
         }
 
         function openNav() {
-            if(sidebar.classList.contains('-translate-x-48')){
+            if (sidebar.classList.contains('-translate-x-48')) {
                 // max sidebar 
                 sidebar.classList.remove("-translate-x-48")
                 sidebar.classList.add("translate-x-none")
@@ -103,11 +112,11 @@
                 miniSidebar.classList.remove("flex")
                 miniSidebar.classList.add("hidden")
                 maxToolbar.classList.add("translate-x-0")
-                maxToolbar.classList.remove("translate-x-24","scale-x-0")
+                maxToolbar.classList.remove("translate-x-24", "scale-x-0")
                 logo.classList.remove("ml-12")
                 content.classList.remove("ml-12")
-                content.classList.add("ml-12","md:ml-60")
-            }else{
+                content.classList.add("ml-12", "md:ml-60")
+            } else {
                 // mini sidebar
                 sidebar.classList.add("-translate-x-48")
                 sidebar.classList.remove("translate-x-none")
@@ -115,10 +124,10 @@
                 maxSidebar.classList.remove("flex")
                 miniSidebar.classList.add("flex")
                 miniSidebar.classList.remove("hidden")
-                maxToolbar.classList.add("translate-x-24","scale-x-0")
+                maxToolbar.classList.add("translate-x-24", "scale-x-0")
                 maxToolbar.classList.remove("translate-x-0")
                 logo.classList.add('ml-12')
-                content.classList.remove("ml-12","md:ml-60")
+                content.classList.remove("ml-12", "md:ml-60")
                 content.classList.add("ml-12")
             }
 
