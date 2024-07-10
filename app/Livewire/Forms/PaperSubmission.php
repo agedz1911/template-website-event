@@ -41,6 +41,7 @@ class PaperSubmission extends Component implements HasForms, HasTable
             ->schema([
                 TextInput::make('free_paper_code')->hidden(),
                 Select::make('article_type')
+                    ->required()
                     ->options([
                         "Case Report" => 'Case Report',
                         "Basic Research" => 'Basic Research',
@@ -49,20 +50,22 @@ class PaperSubmission extends Component implements HasForms, HasTable
                         "Systematic Review" => 'Systematic Review'
                     ]),
                 Select::make('presentation_format')
+                    ->required()
                     ->options([
                         "Oral Presentation" => "Oral Presentation",
                         "Moderated Poster" => "Moderated Poster",
                         "Unmoderated Poster" => 'Unmoderated Poster',
                     ]),
-                Textarea::make('abstract_title')->rows(4),
+                Textarea::make('abstract_title')->rows(4)->required(),
                 FileUpload::make('file')
+                    ->required()
                     ->getUploadedFileNameForStorageUsing(
                         fn (TemporaryUploadedFile $file): string => (string) str($file->getClientOriginalName())
                             ->replace(' ', '-') // replace spaces with dashes
                             ->prepend('wecoc-'),
                     )
                     ->directory('abstract')
-                    ->maxSize(2048)
+                    ->maxSize(1024)
                     ->acceptedFileTypes(['application/pdf', 'application/msword'])
             ])
             ->statePath('data')
@@ -99,6 +102,7 @@ class PaperSubmission extends Component implements HasForms, HasTable
             ->color('success')
             ->send();
         $this->form->fill();
+        return redirect()->back();
     }
 
     public function table(Table $table): Table

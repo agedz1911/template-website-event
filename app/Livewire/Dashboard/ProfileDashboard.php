@@ -3,6 +3,7 @@
 namespace App\Livewire\Dashboard;
 
 use App\Models\User;
+use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -12,11 +13,14 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 use Filament\Infolists\Infolist;
 use Filament\Notifications\Notification;
+use Filament\Pages\Page;
+use Filament\Resources\Pages\CreateRecord;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -106,34 +110,62 @@ class ProfileDashboard extends Component implements HasForms, HasTable
             ->success()
             ->color('success')
             ->send();
-        return redirect()->back();
+        return $this->redirect(ProfileDashboard::class);
     }
 
     public function table(Table $table): Table
     {
+        $countries = countries();
+        $query = User::query();
+
+        if ($this->user->hasRole('super_admin') || $this->user->hasRole('admin')) {
+            $query = $query;
+        } else {
+            $query = $query->where('id',  $this->user->id);
+        }
+
         return $table
-            ->query(User::where('id', $this->user->id))
+            // ->query(User::where('id', $this->user->id))
+            ->query($query)
             ->columns([
-                TextColumn::make('code_participant')->label('code'),
+                TextColumn::make('code_participant')->label('Code'),
                 TextColumn::make('name')
-                ->label('full name')
+                    ->label('Full Name')
                     ->description('last_name'),
+                TextColumn::make('name_on_certificate'),
                 TextColumn::make('email'),
+                TextColumn::make('specialization'),
                 TextColumn::make('country'),
-                TextColumn::make('institution'),
+                TextColumn::make('province'),
                 TextColumn::make('phone_number'),
             ])
             ->actions([
                 ViewAction::make()
                     ->fillForm(fn (User $record): array => [
                         'name' => $record->name,
+                        'email' => $record->email,
+                        'country' => $record->country,
+                        'last_name' => $record->last_name,
+                        'name_on_certificate' => $record->name_on_certificate,
                     ])
                     ->form([
-                        TextInput::make('name')
-                            ->required()
-                            ->maxLength(255),
-                        // ...
+                        TextInput::make('name'),
+                        TextInput::make('last_name'),
+                        TextInput::make('email'),
+                        TextInput::make('country'),
+                        TextInput::make('name_on_certificate'),
+
                     ]),
+                Action::make('Change Password')
+                    ->color('success')
+                    ->label('Change Password')
+                    ->form([
+                        TextInput::make('password')
+                            ->password()
+                            ->dehydrateStateUsing(fn ($state) => Hash::make($state))
+                            ->dehydrated(fn ($state) => filled($state)),
+                    ]),
+                Action::make('edit')
             ]);
     }
 

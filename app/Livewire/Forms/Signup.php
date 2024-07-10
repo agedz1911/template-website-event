@@ -12,9 +12,11 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Hash;
+use Livewire\Attributes\Layout;
 use RealRashid\SweetAlert\Facades\Alert;
 use Spatie\Permission\Models\Role;
 
+#[Layout('components.layouts.clean')]
 class Signup extends Component implements HasForms
 {
     use InteractsWithForms;

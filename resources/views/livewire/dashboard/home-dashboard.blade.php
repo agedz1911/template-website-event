@@ -1,6 +1,6 @@
 <div class="w-full container mx-auto h-screen">
     <div class="flex flex-col ">
-        <h1 class="text-2xl font-semibold">Dashboard</h1>
+        <h1 class="text-2xl font-semibold pt-4">Dashboard</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 mt-8 gap-5 mx-2">
             <div class="card bg-zinc-50 w-full shadow-xl">
                 <div class="card-body">

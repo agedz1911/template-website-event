@@ -1,52 +1,37 @@
 <div class="w-full pb-10 container mx-auto">
-    <h1 class="text-2xl font-semibold mb-8">Profile</h1>
+    <h1 class="text-2xl font-semibold mb-8 pt-4">Profile</h1>
     <div class="flex flex-col items-center gap-5">
-        <div class="flex flex-col md:flex-row justify-evenly items-center w-full gap-3">
-            <div class="card bg-base-100 w-full md:max-w-lg shadow">
-                <div class="card-body">
-                    <h2 class="card-title mb-1">Welcome !</h2>
-                    <div class="flex flex-row items-start gap-3">
-                        <div class="avatar">
-                            <div class="w-12 rounded-full ring-primary ring-offset-base-100 ring ring-offset-2">
-                                <img src="https://ui-avatars.com/api/?name={{$user->name}}+{{$user->last_name}}" />
-                            </div>
-                        </div>
-                        <div class="flex-col">
-                            <p class="font-semibold text-xl">{{$user->name}} {{$user->last_name}}</p>
-                            <p class="text-gray-400 text-sm italic">{{$user->code_participant}} -
-                                {{$user->email}}</p>
-                            <p class="text-gray-400 text-sm font-semibold">{{$user->country}}</p>
+        <div class="flex items-end justify-end w-full">
+            <!-- You can open the modal using ID.showModal() method -->
+            @foreach ($user->roles as $role)
+            @if ($role->name != 'user')
+            <button class="btn btn-success text-white">Add New</button>
+            @else
+            <button class="btn btn-success text-white" onclick="my_modal_3.showModal()">Fill Biodata</button>
+            @endif
+            @endforeach
+            <dialog id="my_modal_3" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                    <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <div class="card bg-base-100 pt-5 shadow-xl">
+                        <div class="card-body">
+                            <h2 class="card-title mb-5">Biodata</h2>
+                            <form wire:submit="update" method="dialog">
+                                {{$this->form}}
+                                <div class="card-actions justify-end mt-5">
+                                    <button class="btn btn-primary" wire:click="$refresh">Save</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="card-actions justify-end ">
-                        <button class="btn">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                            <livewire:forms.signout />
-                        </button>
-                    </div>
                 </div>
-            </div>
-            <div class="card bg-base-100 w-full md:max-w-lg shadow">
-                <div class="card-body relative">
-                    <h2 class="card-title mb-1">Created at</h2>
-                    <p>{{$user->created_at->diffForHumans()}}</p>
-                    <h2 class="card-title mb-1">Last modified at</h2>
-                    <p>{{$user->updated_at->diffForHumans()}}</p>
-                </div>
-            </div>
+            </dialog>
         </div>
-        <!-- <div class="">
+        <div class="w-full">
             {{$this->table}}
-        </div> -->
-        <div class="card bg-base-100 w-full md:max-w-2xl lg:max-w-3xl shadow-xl">
-            <div class="card-body">
-                <form wire:submit="update">
-                    {{$this->form}}
-                    <div class="card-actions justify-end mt-5">
-                        <button class="btn btn-primary">Save</button>
-                    </div>
-                </form>
-            </div>
         </div>
+
     </div>
 </div>

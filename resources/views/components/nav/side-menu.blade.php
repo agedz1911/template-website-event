@@ -1,69 +1,41 @@
-<aside class="w-60 -translate-x-48 fixed transition transform ease-in-out duration-1000 z-50 flex h-screen bg-[#1E293B] ">
-    <!-- open sidebar button -->
-    <div class="max-toolbar translate-x-24 scale-x-0 w-full -right-6 transition transform ease-in duration-300 flex items-center justify-between border-4 border-white dark:border-[#0F172A] bg-[#1E293B]  absolute top-2 rounded-full h-12">
-        <!-- <div class="flex pl-4 items-center space-x-2 ">
-            <div>
-                <div onclick="setDark('dark')" class="moon text-white hover:text-blue-500 dark:hover:text-[#38BDF8]">
-                    <i class="fa-solid fa-moon"></i>
+<aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <ul class="space-y-2 font-medium">
+            <li>
+                <a href="/dashboard" wire:navigate class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="ms-3">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/dashboard/submission" wire:navigate class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="fa-solid fa-file-arrow-up"></i>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Abstract</span>
+                    <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                </a>
+            </li>
+            <li>
+                <a href="/dashboard/profile" wire:navigate class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Profile</span>
+                    <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Biodata</span>
+                    
+                </a>
+            </li>
+            <!-- <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                        <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z" />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+                </a>
+            </li> -->
+            <li>
+                <div class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="fa-solid fa-arrow-right-from-bracket flex-shrink-0 mr-3"></i>
+                    <livewire:forms.signout />
                 </div>
-                <div onclick="setDark('light')" class="sun hidden text-white hover:text-blue-500 dark:hover:text-[#38BDF8]">
-                    <i class="fa-solid fa-sun"></i>
-                </div>
-            </div>
-        </div> -->
-        <div class="flex items-center space-x-3 group bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 from-indigo-500 via-purple-500 to-purple-500  pl-10 pr-2 py-1 rounded-full text-white  ">
-            <div class="transform ease-in-out duration-300 mr-12">
-                Settings
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
-    <div  onclick="openNav()" class="-right-6 transition transform ease-in-out duration-500 flex border-4 border-white dark:border-[#0F172A] bg-[#1E293B] dark:hover:bg-blue-500 hover:bg-purple-500 absolute top-2 p-3 rounded-full text-white hover:rotate-45">
-        <i class="fa-solid fa-gear"></i>
-    </div>
-    <!-- MAX SIDEBAR-->
-    <div class="max hidden text-white mt-20 flex-col space-y-2 w-full h-[calc(100vh)]">
-        <div class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
-            <i class="fa-solid fa-house"></i>
-            <a href="/dashboard">
-                Dashboard
-            </a>
-        </div>
-        <div class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
-            <i class="fa-solid fa-file-arrow-up"></i>
-            <a href="/dashboard/submission">
-                Abstract
-            </a>
-        </div>
-        <div class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
-            <i class="fa-solid fa-user"></i>
-            <a href="/dashboard/profile">
-                Profile
-            </a>
-        </div>
-        <div class="hover:ml-4 w-full text-white hover:text-purple-500 dark:hover:text-blue-500 bg-[#1E293B] p-2 pl-8 rounded-full transform ease-in-out duration-300 flex flex-row items-center space-x-3">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <div>
-                <livewire:forms.signout />
-            </div>
-        </div>
-    </div>
-    <!-- MINI SIDEBAR-->
-    <div class="mini mt-20 flex flex-col space-y-2 w-full h-[calc(100vh)]">
-        <div class="hover:ml-4 justify-end pr-5 text-white hover:text-purple-500 dark:hover:text-blue-500 w-full bg-[#1E293B] p-3 rounded-full transform ease-in-out duration-300 flex">
-            <a href="/dashboard">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div class="hover:ml-4 justify-end pr-5 text-white hover:text-purple-500 dark:hover:text-blue-500 w-full bg-[#1E293B] p-3 rounded-full transform ease-in-out duration-300 flex">
-            <a href="/dashboard/submission">
-                <i class="fa-solid fa-file-arrow-up"></i>
-            </a>
-        </div>
-        <div class="hover:ml-4 justify-end pr-5 text-white hover:text-purple-500 dark:hover:text-blue-500 w-full bg-[#1E293B] p-3 rounded-full transform ease-in-out duration-300 flex">
-            <a href="/dashboard/profile">
-                <i class="fa-solid fa-user"></i>
-            </a>
-        </div>
-    </div>
-
 </aside>

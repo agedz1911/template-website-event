@@ -108,8 +108,7 @@ class UserResource extends Resource
                 TextColumn::make('name')->label('First Name')
                     ->searchable()
                     ->sortable(),
-                TextColumn::make('last_name')
-                   ,
+                TextColumn::make('last_name'),
                 TextColumn::make('email')
                     ->sortable()
                     ->searchable(),

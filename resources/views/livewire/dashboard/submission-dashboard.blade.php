@@ -1,9 +1,13 @@
 <div class="w-full pb-10 container mx-auto">
     <div class="flex flex-col gap-5">
-        <h1 class="text-2xl font-semibold mb-8">Submission</h1>
-        <div class="justify-end">
+        <h1 class="text-2xl font-semibold mb-8 pt-4">Submission</h1>
+        <div class="flex justify-end">
+            @foreach (Auth::user()->roles as $role)
+            @if ($role->name == 'user')
             <button class="btn btn-success text-white" onclick="my_modal_5.showModal()">Add
                 Abstract</button>
+            @endif
+            @endforeach
         </div>
         {{$this->table}}
     </div>

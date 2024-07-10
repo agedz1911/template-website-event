@@ -42,12 +42,21 @@ class SubmissionDashboard extends Component implements HasTable, HasForms
 
     public function table(Table $table): Table
     {
+        $query = FreePaper::query();
+
+        if ($this->user->hasRole('super_admin') || $this->user->hasRole('admin')) {
+            $query = $query;
+        } else {
+            $query = $query->where('user_id',  $this->user->id);
+        }
+
         return $table
-            ->query(FreePaper::where('user_id', $this->user->id))
+            ->query($query)
             ->columns([
                 TextColumn::make('free_paper_code')->label('Abstract Code')->sortable(),
                 TextColumn::make('user.name')->label('Author')
                     ->description(fn (FreePaper $record): string => $record->user['last_name']),
+                TextColumn::make('user.email')->label('Email'),
                 TextColumn::make('user.country')->label('Country'),
                 TextColumn::make('abstract_title')->searchable(),
                 TextColumn::make('presentation_format'),
@@ -80,6 +89,7 @@ class SubmissionDashboard extends Component implements HasTable, HasForms
                         ])
                         ->form([
                             Select::make('article_type')
+
                                 ->options([
                                     "Case Report" => 'Case Report',
                                     "Basic Research" => 'Basic Research',
@@ -88,18 +98,21 @@ class SubmissionDashboard extends Component implements HasTable, HasForms
                                     "Systematic Review" => 'Systematic Review'
                                 ]),
                             Select::make('presentation_format')
+
                                 ->options([
                                     "Oral Presentation" => "Oral Presentation",
                                     "Moderated Poster" => "Moderated Poster",
                                     "Unmoderated Poster" => 'Unmoderated Poster',
                                 ]),
-                            Textarea::make('abstract_title')->rows(4),
+                            Textarea::make('abstract_title')->rows(4)->required(),
                             FileUpload::make('file')
+
                                 ->getUploadedFileNameForStorageUsing(
                                     fn (TemporaryUploadedFile $file): string => (string) str($file->getClientOriginalName())
                                         ->replace(' ', '-') // replace spaces with dashes
                                         ->prepend('wecoc-'),
                                 )
+
                                 ->directory('abstract')
                                 ->maxSize(2048)
                                 ->acceptedFileTypes(['application/pdf', 'application/msword'])

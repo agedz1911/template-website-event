@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\VerticalAlignment;
+use Livewire\Attributes\Layout;
 
-
+#[Layout('components.layouts.clean')]
 class Signin extends Component
 {
 

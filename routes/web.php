@@ -4,7 +4,9 @@ use App\Livewire\Dashboard\FreepaperDashboard;
 use App\Livewire\Dashboard\HomeDashboard;
 use App\Livewire\Dashboard\ProfileDashboard;
 use App\Livewire\Dashboard\SubmissionDashboard;
+use App\Livewire\Forms\Signin;
 use App\Livewire\Forms\Signout;
+use App\Livewire\Forms\Signup;
 use App\Livewire\HomePage;
 use App\Livewire\Pages\CongressInformation;
 use App\Livewire\Pages\Registration;
@@ -26,9 +28,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomePage::class)->name('home');
 Route::prefix('/congress-information')->group(function () {
     Route::get('/', CongressInformation::class);
-    Route::get('#welcome-message', CongressInformation::class);
-    Route::get('#organizing-committee', CongressInformation::class);
-    Route::get('#faculties', CongressInformation::class);
+    Route::get('/#welcome-message', CongressInformation::class);
+    Route::get('/#organizing-committee', CongressInformation::class);
+    Route::get('/#faculties', CongressInformation::class);
 });
 Route::prefix('/scientific-program')->group(function () {
     Route::get('/', ScientificProgram::class);
@@ -42,6 +44,8 @@ Route::prefix('/submission')->group(function () {
 });
 Route::get('/registration', Registration::class);
 
+Route::get('/signin', Signin::class);
+Route::get('/signup', Signup::class);
 
 Route::prefix('/dashboard')->group(function () {
     Route::get('/', HomeDashboard::class)->middleware('auth', 'verified');
