@@ -39,7 +39,7 @@
                     </div>
                     <ul tabindex="0" class="dropdown-content menu bg-base-100  rounded-box z-[1] w-52 p-2 shadow mt-2">
                         <li>
-                            <a class="link link-hover justify-between" wire:navigate href="/">Home Page
+                            <a class="link link-hover justify-between" href="/">Home Page
                                 <span><i class="fa-solid fa-globe"></i></span>
                             </a>
                         </li>
@@ -64,8 +64,15 @@
                 </li>
                 <li><a href="/dashboard/submission" wire:navigate class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <i class="fa-solid fa-file-arrow-up"></i>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Abstract</span>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Abstract Submission</span>
                         <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/dashboard/registration" wire:navigate class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Registration</span>
+                        <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Biodata</span>
                     </a>
                 </li>
                 <li>
@@ -75,6 +82,7 @@
                         <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Biodata</span>
                     </a>
                 </li>
+                
                 <li>
                     <div class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <i class="fa-solid fa-arrow-right-from-bracket flex-shrink-0 mr-3"></i>
@@ -89,7 +97,7 @@
 
     <div class="p-4 sm:ml-64">
         <div class="border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-            
+
             {{ $slot }}
         </div>
     </div>

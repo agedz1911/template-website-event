@@ -1,6 +1,6 @@
 <div class="sticky top-0 z-10">
   <div class="navbar bg-slate-50 w-full ">
-    <div class="navbar-start">
+    <div class="navbar-start ">
       <div class="mx-2 flex-1 px-2">
         <div class="avatar">
           <a href="/" class="h-14">
@@ -9,18 +9,12 @@
         </div>
       </div>
     </div>
-    <div class="lg:hidden">
-      <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost float-end">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </label>
-    </div>
+
     <div class="hidden flex-none navbar-center lg:block">
       <ul class="site-menu-main ">
 
         <li class="nav-item {{ request()->is('/') ? 'text-primary-500' : '' }}">
-          <a href="/" wire:navigate class="nav-link-item hover:text-primary-500">Home</a>
+          <a href="/" class="nav-link-item hover:text-primary-500">Home</a>
         </li>
         <li class="nav-item nav-item-has-children {{ request()->is('congress-information*') ? 'text-primary-500' : '' }}">
           <a class="nav-link-item drop-trigger  hover:text-primary-500">Congress
@@ -39,14 +33,20 @@
             <li class="sub-menu--item"><a href="/scientific-program#schedule" wire:click="$refresh">Scientific Schedule</a></li>
           </ul>
         </li>
-        <li class="nav-item {{ request()->is('/registration') ? 'text-primary-500' : '' }}">
+        <li class="nav-item {{ request()->is('registration*') ? 'text-primary-500' : '' }}">
           <a href="/registration" wire:click="$refresh" class="nav-link-item hover:text-primary-500">Registration<i class="fa-solid fa-angle-down"></i></a>
         </li>
         <li class="nav-item nav-item-has-children {{ request()->is('submission*') ? 'text-primary-500' : '' }}">
           <a class="nav-link-item drop-trigger  hover:text-primary-500">Submission <i class="fa-solid fa-angle-down"></i></a>
           <ul class="p-2 sub-menu">
             <li class="sub-menu--item"><a href="/submission#guideline-abstract" wire:click="$refresh">Guideline for Abstract</a></li>
-            <li class="sub-menu--item"><a href="/submission#submission" wire:click="$refresh">Abstract Submission</a></li>
+            <li class="sub-menu--item">
+              @guest
+              <a href="/signin" wire:click="$refresh">Abstract Submission</a>
+              @else
+              <a href="/dashboard/submission" wire:click="$refresh">Abstract Submission</a>
+              @endguest
+            </li>
           </ul>
         </li>
         <li class="nav-item {{ request()->is('/cardiology-in-jeopardy') ? 'text-primary-500' : '' }}">
@@ -58,11 +58,18 @@
       </ul>
     </div>
     <div class="navbar-end ">
+      <div class="lg:hidden">
+        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost float-end">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </label>
+      </div>
       <a href="https://www.instagram.com/wecoc_ykvi/?igsh=MXYzeHQxYThlbDFqcQ%3D%3D" class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-instagram text-rose-500 "></i></a>
       <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-facebook text-sky-500 "></i></a>
       <a class="btn btn-ghost btn-sm hidden sm:inline-block py-2 btn-circle"><i class="fa-brands fa-square-x-twitter "></i></a>
       @guest
-      <a wire:navigate href="/signin" class="btn bg-primary-800 hover:bg-primary-600 text-white">
+      <a href="/signin" class="btn bg-primary-800 hover:bg-primary-600 text-white">
         <i class="fa-solid fa-lock"></i> Sign in</a>
       @else
       <div class="dropdown dropdown-end">

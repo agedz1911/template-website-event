@@ -16,7 +16,7 @@
 
 <body>
     {{$slot}}
-
+    @livewire('notifications')
     <script src="js/custom.js"></script>
     @filamentScripts
     @vite('resources/js/app.js')

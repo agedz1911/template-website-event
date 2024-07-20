@@ -233,9 +233,17 @@
                 </ul>
             </details>
         </div>
+        <div class="text-end mt-8 gap-3">
+            @guest
+            <a href="/signin" class="btn bg-primary-700 hover:bg-primary-500 border-none  text-white"><i class="fa-solid fa-lock"></i> Sign in for Submit</a>
+            @else
+            <a href="javascript:void(0)" class="btn bg-primary-700 hover:bg-primary-500 border-none  text-white"><i class="fa-solid fa-file-export"></i> Submit Now</a>
+            @endguest
+            <a href="/download/guideline-abstract.pdf" target="_blank" class="btn btn-outline  btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Guideline</a>
+        </div>
 
     </div>
-    <div class="pt-28 pb-52 lg:px-20 px-5 bg-slate-50" id="submission">
+    <!-- <div class="pt-28 pb-52 lg:px-20 px-5 bg-slate-50" id="submission">
         <div class="flex-col flex gap-3 mb-10">
             <h4 class="text-2xl text-primary-600 font-semibold">Submission</h4>
             <h1 class="text-4xl text-primary-700 font-semibold">Abstract Submission</h1>
@@ -267,5 +275,5 @@
             <livewire:forms.paper-submission />
             @endguest
         </div>
-    </div>
+    </div> -->
 </div>

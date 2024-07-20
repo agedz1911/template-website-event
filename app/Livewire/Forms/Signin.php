@@ -33,7 +33,7 @@ class Signin extends Component
                 ->color('success')
                 ->icon('heroicon-o-lock-open')
                 ->send();
-            return redirect()->intended('/');
+            return $this->redirect('/dashboard');   
         }
         // Notification::make()
         //     ->title('Invalid credentials')
@@ -41,7 +41,7 @@ class Signin extends Component
         //     ->iconColor('danger')
         //     ->icon('heroicon-o-x-circle')
         //     ->send();
-        return back()->with('error', 'Invalid credentials');
+        return back()->with('error', 'Invalid email address or password');
     }
 
     public function render()

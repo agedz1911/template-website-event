@@ -1,13 +1,14 @@
 <div>
-    @if (Session::has('error'))
-    <div role="alert" class="alert bg-red-500 text-white items-center">
-        <i class="fa-regular fa-circle-xmark"></i>
-        {{ Session::get('error') }}
-    </div>
-    @endif
+
     <div class="flex flex-col justify-center bg-doctor bg-primary-50 bg-local items-center min-h-screen">
         <div class="w-full max-w-xl px-3">
-            <div class="card bg-base-100  shadow-lg border-l-4 border-primary-600">
+            @if (Session::has('error'))
+            <div role="alert" class="alert bg-red-500 text-white items-center">
+                <i class="fa-regular fa-circle-xmark"></i>
+                {{ Session::get('error') }}
+            </div>
+            @endif
+            <div class="card bg-base-100 mt-3 shadow-lg border-l-4 border-primary-600">
                 <figure>
                     <h2 class="text-center font-semibold text-2xl pt-8">The 36<sup>th</sup> WECOC <br> Weekend Course on Cardiology</h2>
                 </figure>
